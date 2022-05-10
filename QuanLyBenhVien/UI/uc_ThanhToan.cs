@@ -46,7 +46,7 @@ namespace QuanLyBenhVien.UI
             foreach (DataRow r in dt.Rows)
             {
                 var rw = r.Field<string>("CMND");
-                txbTimBN.AutoCompleteMode = AutoCompleteMode.Append;
+                txbTimBN.AutoCompleteMode = AutoCompleteMode.Suggest;
                 txbTimBN.AutoCompleteSource = AutoCompleteSource.CustomSource;
                 txbTimBN.AutoCompleteCustomSource.Add(rw);
             }
@@ -189,12 +189,12 @@ namespace QuanLyBenhVien.UI
                     catch { MessageBox.Show("Error: " + e); }
                 }
                 Reset();
-                MessageBox.Show("Thanh Toán Thành Công");
+                MessageBox.Show("Thanh Toán Thành Công!");
 
             }
             catch (Exception)
             {
-                MessageBox.Show("Thanh Toán Không Thành Công");
+                MessageBox.Show("Thanh Toán Không Thành Công!");
             }
         }
         private void Reset()
@@ -206,7 +206,6 @@ namespace QuanLyBenhVien.UI
             txbQuoctich.Text = "";
             txbSDT.Text = "";
             cbxBaohiem.Text = "";
-
             txbCPDonThuoc.Text = "0";
             txbCPKhamBenh.Text = "0";
             txbTienThua.Text = "0";
