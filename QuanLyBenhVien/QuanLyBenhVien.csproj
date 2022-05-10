@@ -362,6 +362,17 @@
       <DependentUpon>QLBV.edmx</DependentUpon>
       <LastGenOutput>QLBV.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\211652_close_icon.png" />
+    <None Include="Resources\7030152_ui basic_write_pen_pencil_edit_icon %282%29.png" />
+    <None Include="Resources\4781812_bin_delete_file_garbage_recycle_icon %282%29.png" />
+    <None Include="Resources\171273_backup_guardar_safe_save_store_icon.png" />
+    <None Include="Resources\309049_add_user_human_person_plus_icon.png" />
+    <None Include="Resources\4781812_bin_delete_file_garbage_recycle_icon %281%29.png" />
+    <None Include="Resources\7030152_ui basic_write_pen_pencil_edit_icon %281%29.png" />
+    <None Include="Resources\5826272_edit_interface_pencil_school_writing_icon.png" />
+    <None Include="Resources\4781812_bin_delete_file_garbage_recycle_icon.png" />
+    <None Include="Resources\309050_add_group_users_business_human_icon %281%29.png" />
+    <None Include="Resources\309050_add_group_users_business_human_icon.png" />
     <None Include="Resources\352084_save_guardar_icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

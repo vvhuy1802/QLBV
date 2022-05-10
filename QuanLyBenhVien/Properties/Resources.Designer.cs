@@ -73,6 +73,116 @@ namespace QuanLyBenhVien.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _171273_backup_guardar_safe_save_store_icon {
+            get {
+                object obj = ResourceManager.GetObject("171273_backup_guardar_safe_save_store_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _211652_close_icon {
+            get {
+                object obj = ResourceManager.GetObject("211652_close_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _309049_add_user_human_person_plus_icon {
+            get {
+                object obj = ResourceManager.GetObject("309049_add_user_human_person_plus_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _309050_add_group_users_business_human_icon {
+            get {
+                object obj = ResourceManager.GetObject("309050_add_group_users_business_human_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _309050_add_group_users_business_human_icon__1_ {
+            get {
+                object obj = ResourceManager.GetObject("309050_add_group_users_business_human_icon (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _4781812_bin_delete_file_garbage_recycle_icon {
+            get {
+                object obj = ResourceManager.GetObject("4781812_bin_delete_file_garbage_recycle_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _4781812_bin_delete_file_garbage_recycle_icon__1_ {
+            get {
+                object obj = ResourceManager.GetObject("4781812_bin_delete_file_garbage_recycle_icon (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _4781812_bin_delete_file_garbage_recycle_icon__2_ {
+            get {
+                object obj = ResourceManager.GetObject("4781812_bin_delete_file_garbage_recycle_icon (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _5826272_edit_interface_pencil_school_writing_icon {
+            get {
+                object obj = ResourceManager.GetObject("5826272_edit_interface_pencil_school_writing_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _7030152_ui_basic_write_pen_pencil_edit_icon__1_ {
+            get {
+                object obj = ResourceManager.GetObject("7030152_ui basic_write_pen_pencil_edit_icon (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _7030152_ui_basic_write_pen_pencil_edit_icon__2_ {
+            get {
+                object obj = ResourceManager.GetObject("7030152_ui basic_write_pen_pencil_edit_icon (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap camila_vignoni_fondo_hospital {
             get {
                 object obj = ResourceManager.GetObject("camila-vignoni-fondo-hospital", resourceCulture);

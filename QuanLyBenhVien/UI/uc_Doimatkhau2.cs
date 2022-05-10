@@ -80,5 +80,10 @@ namespace QuanLyBenhVien.UI
         {
 
         }
+
+        private void uc_Doimatkhau2_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
