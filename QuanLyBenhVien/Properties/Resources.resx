@@ -118,7 +118,43 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="5826272_edit_interface_pencil_school_writing_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\5826272_edit_interface_pencil_school_writing_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="309049_add_user_human_person_plus_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\309049_add_user_human_person_plus_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="309050_add_group_users_business_human_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\309050_add_group_users_business_human_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="309050_add_group_users_business_human_icon (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\309050_add_group_users_business_human_icon (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4781812_bin_delete_file_garbage_recycle_icon (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4781812_bin_delete_file_garbage_recycle_icon (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="camila-vignoni-fondo-hospital" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\camila-vignoni-fondo-hospital.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="352084_save_guardar_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\352084_save_guardar_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4781812_bin_delete_file_garbage_recycle_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4781812_bin_delete_file_garbage_recycle_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4781812_bin_delete_file_garbage_recycle_icon (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4781812_bin_delete_file_garbage_recycle_icon (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="7030152_ui basic_write_pen_pencil_edit_icon (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\7030152_ui basic_write_pen_pencil_edit_icon (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="171273_backup_guardar_safe_save_store_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\171273_backup_guardar_safe_save_store_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="7030152_ui basic_write_pen_pencil_edit_icon (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\7030152_ui basic_write_pen_pencil_edit_icon (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="211652_close_icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\211652_close_icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

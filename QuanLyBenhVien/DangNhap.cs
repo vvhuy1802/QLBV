@@ -131,19 +131,19 @@ namespace QuanLyBenhVien
 
         private void DangNhap_Leave(object sender, EventArgs e)
         {
-            Form f = before();
-            f.Show();
-        }
-        Form before()
-        {
-            Form f = new HeThong();
-            return f;
+            Application.Exit();
         }
 
         private void DangNhap_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Form f = before();
+            Application.Exit();
+        }
+
+        private void btnSignUp_Click(object sender, EventArgs e)
+        {
+            Form f = new TTDangKycs();
             f.Show();
+            this.Hide();
         }
     }
 }
