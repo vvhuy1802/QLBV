@@ -28,6 +28,7 @@ namespace QuanLyBenhVien
         }
     
         public virtual DbSet<BangLuong> BangLuongs { get; set; }
+        public virtual DbSet<BenhBenhNhan> BenhBenhNhans { get; set; }
         public virtual DbSet<BenhNhan> BenhNhans { get; set; }
         public virtual DbSet<ChucVu> ChucVus { get; set; }
         public virtual DbSet<DonThuoc> DonThuocs { get; set; }

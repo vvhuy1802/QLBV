@@ -65,7 +65,33 @@ namespace QuanLyBenhVien.UI
 
         private void btnthem_Click(object sender, EventArgs e)
         {
-            txbbenh.Text = txbbenh.Text + cbxbenh.Text + " \n";
+             txbbenh.Text = txbbenh.Text + cbxbenh.Text + " \n";
+            using (QuanLyBenhVienEntities db = new QuanLyBenhVienEntities())
+            {
+                try
+                {
+                    string id = txbcmnd.Text;
+
+                    var connectionString = @"data source=HUY\SQLEXPRESS;initial catalog=QuanLyBenhVien;integrated security=True";
+                    using (var connection = new SqlConnection(connectionString))
+                    {
+                        var commandText = "select id from LoaiBenh where Ten =N'" + cbxbenh.Text + "'";
+                        var command = new SqlCommand(commandText, connection);
+                        connection.Open();
+                        var count = (int)command.ExecuteScalar();
+
+                        BenhBenhNhan dt = new BenhBenhNhan()
+                        {
+                            IDBenhNhan = id,
+                            IDBenh = count,
+                        };
+                        db.BenhBenhNhans.Add(dt);
+                    }
+                    db.SaveChanges();
+                }
+                catch { }
+            }
+            BindingBenh(dtgvbenh);
         }
 
         private void btnluu_Click(object sender, EventArgs e)

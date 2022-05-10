@@ -12,6 +12,15 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="BenhBenhNhans">
+      <EntityTypeMapping TypeName="QuanLyBenhVienModel.BenhBenhNhan">
+        <MappingFragment StoreEntitySet="BenhBenhNhan">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="IDBenhNhan" ColumnName="IDBenhNhan" />
+          <ScalarProperty Name="IDBenh" ColumnName="IDBenh" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="BenhNhans">
       <EntityTypeMapping TypeName="QuanLyBenhVienModel.BenhNhan">
         <MappingFragment StoreEntitySet="BenhNhan">
@@ -44,8 +53,9 @@
     <EntitySetMapping Name="DonThuocs">
       <EntityTypeMapping TypeName="QuanLyBenhVienModel.DonThuoc">
         <MappingFragment StoreEntitySet="DonThuoc">
-          <ScalarProperty Name="IDThuoc" ColumnName="IDThuoc" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="IDBenhNhan" ColumnName="IDBenhNhan" />
+          <ScalarProperty Name="IDThuoc" ColumnName="IDThuoc" />
           <ScalarProperty Name="SoLuong" ColumnName="SoLuong" />
         </MappingFragment>
       </EntityTypeMapping>
@@ -55,11 +65,9 @@
         <MappingFragment StoreEntitySet="HoaDon">
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="CMNDBN" ColumnName="CMNDBN" />
-          <ScalarProperty Name="phuongthuctt" ColumnName="phuongthuctt" />
-          <ScalarProperty Name="NhapVien" ColumnName="NhapVien" />
-          <ScalarProperty Name="TienNhap" ColumnName="TienNhap" />
-          <ScalarProperty Name="TienDichVu" ColumnName="TienDichVu" />
-          <ScalarProperty Name="TongTien" ColumnName="TongTien" />
+          <ScalarProperty Name="TienKham" ColumnName="TienKham" />
+          <ScalarProperty Name="TienThuoc" ColumnName="TienThuoc" />
+          <ScalarProperty Name="XuatVien" ColumnName="XuatVien" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

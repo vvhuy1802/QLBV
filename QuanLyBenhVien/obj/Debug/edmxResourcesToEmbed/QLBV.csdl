@@ -11,6 +11,16 @@
     <Property Name="Trocap" Type="Decimal" Precision="19" Scale="4" />
     <NavigationProperty Name="NhanVien" Relationship="Self.FK__BangLuong__Troca__3E52440B" FromRole="BangLuong" ToRole="NhanVien" />
   </EntityType>
+  <EntityType Name="BenhBenhNhan">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IDBenhNhan" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="IDBenh" Type="Int32" />
+    <NavigationProperty Name="LoaiBenh" Relationship="Self.FK__BenhBenhN__IDBen__68487DD7" FromRole="BenhBenhNhan" ToRole="LoaiBenh" />
+    <NavigationProperty Name="BenhNhan" Relationship="Self.FK__BenhBenhN__IDBen__693CA210" FromRole="BenhBenhNhan" ToRole="BenhNhan" />
+  </EntityType>
   <EntityType Name="BenhNhan">
     <Key>
       <PropertyRef Name="CMND" />
@@ -29,9 +39,9 @@
     <Property Name="Benh" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
     <Property Name="Thuoc" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
     <Property Name="IDThuoc" Type="Int32" />
+    <NavigationProperty Name="BenhBenhNhans" Relationship="Self.FK__BenhBenhN__IDBen__693CA210" FromRole="BenhNhan" ToRole="BenhBenhNhan" />
     <NavigationProperty Name="NhanVien" Relationship="Self.FK__BenhNhan__CMNDBS__2A4B4B5E" FromRole="BenhNhan" ToRole="NhanVien" />
-    <NavigationProperty Name="DonThuoc" Relationship="Self.FK__DonThuoc__IDBenh__31EC6D26" FromRole="BenhNhan" ToRole="DonThuoc" />
-    <NavigationProperty Name="HoaDons" Relationship="Self.FK__HoaDon__TongTien__3B75D760" FromRole="BenhNhan" ToRole="HoaDon" />
+    <NavigationProperty Name="DonThuocs" Relationship="Self.FK__DonThuoc__IDBenh__6D0D32F4" FromRole="BenhNhan" ToRole="DonThuoc" />
   </EntityType>
   <EntityType Name="ChucVu">
     <Key>
@@ -44,13 +54,14 @@
   </EntityType>
   <EntityType Name="DonThuoc">
     <Key>
-      <PropertyRef Name="IDBenhNhan" />
+      <PropertyRef Name="ID" />
     </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="IDBenhNhan" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
     <Property Name="IDThuoc" Type="Int32" />
-    <Property Name="IDBenhNhan" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="SoLuong" Type="Int32" />
-    <NavigationProperty Name="BenhNhan" Relationship="Self.FK__DonThuoc__IDBenh__31EC6D26" FromRole="DonThuoc" ToRole="BenhNhan" />
-    <NavigationProperty Name="LoaiThuoc" Relationship="Self.FK__DonThuoc__IDThuo__30F848ED" FromRole="DonThuoc" ToRole="LoaiThuoc" />
+    <NavigationProperty Name="BenhNhan" Relationship="Self.FK__DonThuoc__IDBenh__6D0D32F4" FromRole="DonThuoc" ToRole="BenhNhan" />
+    <NavigationProperty Name="LoaiThuoc" Relationship="Self.FK__DonThuoc__IDThuo__6C190EBB" FromRole="DonThuoc" ToRole="LoaiThuoc" />
   </EntityType>
   <EntityType Name="HoaDon">
     <Key>
@@ -58,12 +69,9 @@
     </Key>
     <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="CMNDBN" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
-    <Property Name="phuongthuctt" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
-    <Property Name="NhapVien" Type="DateTime" Precision="0" />
-    <Property Name="TienNhap" Type="Decimal" Precision="19" Scale="4" />
-    <Property Name="TienDichVu" Type="Decimal" Precision="19" Scale="4" />
-    <Property Name="TongTien" Type="Decimal" Precision="19" Scale="4" />
-    <NavigationProperty Name="BenhNhan" Relationship="Self.FK__HoaDon__TongTien__3B75D760" FromRole="HoaDon" ToRole="BenhNhan" />
+    <Property Name="TienKham" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="TienThuoc" Type="Decimal" Precision="19" Scale="4" />
+    <Property Name="XuatVien" Type="DateTime" Precision="0" />
   </EntityType>
   <EntityType Name="LoaiBenh">
     <Key>
@@ -72,6 +80,7 @@
     <Property Name="ID" Type="Int32" Nullable="false" />
     <Property Name="Ten" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
     <Property Name="Gia" Type="Decimal" Precision="19" Scale="4" />
+    <NavigationProperty Name="BenhBenhNhans" Relationship="Self.FK__BenhBenhN__IDBen__68487DD7" FromRole="LoaiBenh" ToRole="BenhBenhNhan" />
   </EntityType>
   <EntityType Name="LoaiThuoc">
     <Key>
@@ -82,7 +91,7 @@
     <Property Name="Hinh" Type="Binary" MaxLength="Max" FixedLength="false" />
     <Property Name="Gia" Type="Decimal" Precision="19" Scale="4" />
     <Property Name="SoLuong" Type="Int32" />
-    <NavigationProperty Name="DonThuocs" Relationship="Self.FK__DonThuoc__IDThuo__30F848ED" FromRole="LoaiThuoc" ToRole="DonThuoc" />
+    <NavigationProperty Name="DonThuocs" Relationship="Self.FK__DonThuoc__IDThuo__6C190EBB" FromRole="LoaiThuoc" ToRole="DonThuoc" />
   </EntityType>
   <EntityType Name="LuongCoBan">
     <Key>
@@ -134,6 +143,30 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="FK__BenhBenhN__IDBen__68487DD7">
+    <End Role="LoaiBenh" Type="Self.LoaiBenh" Multiplicity="0..1" />
+    <End Role="BenhBenhNhan" Type="Self.BenhBenhNhan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LoaiBenh">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="BenhBenhNhan">
+        <PropertyRef Name="IDBenh" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__BenhBenhN__IDBen__693CA210">
+    <End Role="BenhNhan" Type="Self.BenhNhan" Multiplicity="0..1" />
+    <End Role="BenhBenhNhan" Type="Self.BenhBenhNhan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BenhNhan">
+        <PropertyRef Name="CMND" />
+      </Principal>
+      <Dependent Role="BenhBenhNhan">
+        <PropertyRef Name="IDBenhNhan" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <Association Name="FK__BenhNhan__CMNDBS__2A4B4B5E">
     <End Role="NhanVien" Type="Self.NhanVien" Multiplicity="0..1" />
     <End Role="BenhNhan" Type="Self.BenhNhan" Multiplicity="*" />
@@ -146,27 +179,15 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__DonThuoc__IDBenh__31EC6D26">
-    <End Role="BenhNhan" Type="Self.BenhNhan" Multiplicity="1" />
-    <End Role="DonThuoc" Type="Self.DonThuoc" Multiplicity="0..1" />
+  <Association Name="FK__DonThuoc__IDBenh__6D0D32F4">
+    <End Role="BenhNhan" Type="Self.BenhNhan" Multiplicity="0..1" />
+    <End Role="DonThuoc" Type="Self.DonThuoc" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="BenhNhan">
         <PropertyRef Name="CMND" />
       </Principal>
       <Dependent Role="DonThuoc">
         <PropertyRef Name="IDBenhNhan" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK__HoaDon__TongTien__3B75D760">
-    <End Role="BenhNhan" Type="Self.BenhNhan" Multiplicity="0..1" />
-    <End Role="HoaDon" Type="Self.HoaDon" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="BenhNhan">
-        <PropertyRef Name="CMND" />
-      </Principal>
-      <Dependent Role="HoaDon">
-        <PropertyRef Name="CMNDBN" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -182,7 +203,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK__DonThuoc__IDThuo__30F848ED">
+  <Association Name="FK__DonThuoc__IDThuo__6C190EBB">
     <End Role="LoaiThuoc" Type="Self.LoaiThuoc" Multiplicity="0..1" />
     <End Role="DonThuoc" Type="Self.DonThuoc" Multiplicity="*" />
     <ReferentialConstraint>
@@ -208,6 +229,7 @@
   </Association>
   <EntityContainer Name="QuanLyBenhVienEntities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="BangLuongs" EntityType="Self.BangLuong" />
+    <EntitySet Name="BenhBenhNhans" EntityType="Self.BenhBenhNhan" />
     <EntitySet Name="BenhNhans" EntityType="Self.BenhNhan" />
     <EntitySet Name="ChucVus" EntityType="Self.ChucVu" />
     <EntitySet Name="DonThuocs" EntityType="Self.DonThuoc" />
@@ -221,23 +243,27 @@
       <End Role="NhanVien" EntitySet="NhanViens" />
       <End Role="BangLuong" EntitySet="BangLuongs" />
     </AssociationSet>
+    <AssociationSet Name="FK__BenhBenhN__IDBen__68487DD7" Association="Self.FK__BenhBenhN__IDBen__68487DD7">
+      <End Role="LoaiBenh" EntitySet="LoaiBenhs" />
+      <End Role="BenhBenhNhan" EntitySet="BenhBenhNhans" />
+    </AssociationSet>
+    <AssociationSet Name="FK__BenhBenhN__IDBen__693CA210" Association="Self.FK__BenhBenhN__IDBen__693CA210">
+      <End Role="BenhNhan" EntitySet="BenhNhans" />
+      <End Role="BenhBenhNhan" EntitySet="BenhBenhNhans" />
+    </AssociationSet>
     <AssociationSet Name="FK__BenhNhan__CMNDBS__2A4B4B5E" Association="Self.FK__BenhNhan__CMNDBS__2A4B4B5E">
       <End Role="NhanVien" EntitySet="NhanViens" />
       <End Role="BenhNhan" EntitySet="BenhNhans" />
     </AssociationSet>
-    <AssociationSet Name="FK__DonThuoc__IDBenh__31EC6D26" Association="Self.FK__DonThuoc__IDBenh__31EC6D26">
+    <AssociationSet Name="FK__DonThuoc__IDBenh__6D0D32F4" Association="Self.FK__DonThuoc__IDBenh__6D0D32F4">
       <End Role="BenhNhan" EntitySet="BenhNhans" />
       <End Role="DonThuoc" EntitySet="DonThuocs" />
-    </AssociationSet>
-    <AssociationSet Name="FK__HoaDon__TongTien__3B75D760" Association="Self.FK__HoaDon__TongTien__3B75D760">
-      <End Role="BenhNhan" EntitySet="BenhNhans" />
-      <End Role="HoaDon" EntitySet="HoaDons" />
     </AssociationSet>
     <AssociationSet Name="FK__NhanVien__IDchuc__267ABA7A" Association="Self.FK__NhanVien__IDchuc__267ABA7A">
       <End Role="ChucVu" EntitySet="ChucVus" />
       <End Role="NhanVien" EntitySet="NhanViens" />
     </AssociationSet>
-    <AssociationSet Name="FK__DonThuoc__IDThuo__30F848ED" Association="Self.FK__DonThuoc__IDThuo__30F848ED">
+    <AssociationSet Name="FK__DonThuoc__IDThuo__6C190EBB" Association="Self.FK__DonThuoc__IDThuo__6C190EBB">
       <End Role="LoaiThuoc" EntitySet="LoaiThuocs" />
       <End Role="DonThuoc" EntitySet="DonThuocs" />
     </AssociationSet>

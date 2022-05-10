@@ -17,7 +17,8 @@ namespace QuanLyBenhVien
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public BenhNhan()
         {
-            this.HoaDons = new HashSet<HoaDon>();
+            this.BenhBenhNhans = new HashSet<BenhBenhNhan>();
+            this.DonThuocs = new HashSet<DonThuoc>();
         }
     
         public string CMND { get; set; }
@@ -35,9 +36,10 @@ namespace QuanLyBenhVien
         public string Thuoc { get; set; }
         public Nullable<int> IDThuoc { get; set; }
     
-        public virtual NhanVien NhanVien { get; set; }
-        public virtual DonThuoc DonThuoc { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<HoaDon> HoaDons { get; set; }
+        public virtual ICollection<BenhBenhNhan> BenhBenhNhans { get; set; }
+        public virtual NhanVien NhanVien { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<DonThuoc> DonThuocs { get; set; }
     }
 }

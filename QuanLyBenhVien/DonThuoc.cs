@@ -14,8 +14,9 @@ namespace QuanLyBenhVien
     
     public partial class DonThuoc
     {
-        public Nullable<int> IDThuoc { get; set; }
+        public int ID { get; set; }
         public string IDBenhNhan { get; set; }
+        public Nullable<int> IDThuoc { get; set; }
         public Nullable<int> SoLuong { get; set; }
     
         public virtual BenhNhan BenhNhan { get; set; }

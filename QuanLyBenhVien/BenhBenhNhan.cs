@@ -12,12 +12,13 @@ namespace QuanLyBenhVien
     using System;
     using System.Collections.Generic;
     
-    public partial class HoaDon
+    public partial class BenhBenhNhan
     {
         public int ID { get; set; }
-        public string CMNDBN { get; set; }
-        public Nullable<decimal> TienKham { get; set; }
-        public Nullable<decimal> TienThuoc { get; set; }
-        public Nullable<System.DateTime> XuatVien { get; set; }
+        public string IDBenhNhan { get; set; }
+        public Nullable<int> IDBenh { get; set; }
+    
+        public virtual LoaiBenh LoaiBenh { get; set; }
+        public virtual BenhNhan BenhNhan { get; set; }
     }
 }
