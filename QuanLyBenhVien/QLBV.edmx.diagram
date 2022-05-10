@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="cec00eb28c8b4458b783d5fa9ebf377d" Name="Diagram1">
+        <EntityTypeShape EntityType="QuanLyBenhVienModel.BangLuong" Width="1.5" PointX="5.25" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyBenhVienModel.BenhNhan" Width="1.5" PointX="5.25" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyBenhVienModel.ChucVu" Width="1.5" PointX="0.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyBenhVienModel.DonThuoc" Width="1.5" PointX="7.5" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyBenhVienModel.HoaDon" Width="1.5" PointX="7.5" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyBenhVienModel.LoaiBenh" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyBenhVienModel.LoaiThuoc" Width="1.5" PointX="5.25" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyBenhVienModel.LuongCoBan" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyBenhVienModel.NhanVien" Width="1.5" PointX="3" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyBenhVienModel.User" Width="1.5" PointX="5.25" PointY="9.75" IsExpanded="true" />
+        <AssociationConnector Association="QuanLyBenhVienModel.FK__BangLuong__Troca__3E52440B" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyBenhVienModel.FK__BenhNhan__CMNDBS__2A4B4B5E" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyBenhVienModel.FK__DonThuoc__IDBenh__31EC6D26" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyBenhVienModel.FK__HoaDon__TongTien__3B75D760" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyBenhVienModel.FK__NhanVien__IDchuc__267ABA7A" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyBenhVienModel.FK__DonThuoc__IDThuo__30F848ED" ManuallyRouted="false" />
+        <AssociationConnector Association="QuanLyBenhVienModel.FK__Users__CMND__37A5467C" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
