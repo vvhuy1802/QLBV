@@ -29,85 +29,96 @@ namespace QuanLyBenhVien.UI
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
             this.txtpassnew2 = new System.Windows.Forms.TextBox();
             this.txtpassnew1 = new System.Windows.Forms.TextBox();
             this.txtpassold = new System.Windows.Forms.TextBox();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(333, 272);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 39;
-            this.button1.Text = "Lưu";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // txtpassnew2
             // 
-            this.txtpassnew2.Location = new System.Drawing.Point(398, 211);
+            this.txtpassnew2.Location = new System.Drawing.Point(312, 241);
+            this.txtpassnew2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtpassnew2.Name = "txtpassnew2";
-            this.txtpassnew2.Size = new System.Drawing.Size(100, 20);
+            this.txtpassnew2.Size = new System.Drawing.Size(181, 22);
             this.txtpassnew2.TabIndex = 38;
             // 
             // txtpassnew1
             // 
-            this.txtpassnew1.Location = new System.Drawing.Point(398, 153);
+            this.txtpassnew1.Location = new System.Drawing.Point(312, 169);
+            this.txtpassnew1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtpassnew1.Name = "txtpassnew1";
-            this.txtpassnew1.Size = new System.Drawing.Size(100, 20);
+            this.txtpassnew1.Size = new System.Drawing.Size(181, 22);
             this.txtpassnew1.TabIndex = 37;
             // 
             // txtpassold
             // 
-            this.txtpassold.Location = new System.Drawing.Point(398, 88);
+            this.txtpassold.Location = new System.Drawing.Point(312, 89);
+            this.txtpassold.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtpassold.Name = "txtpassold";
-            this.txtpassold.Size = new System.Drawing.Size(100, 20);
+            this.txtpassold.Size = new System.Drawing.Size(181, 22);
             this.txtpassold.TabIndex = 36;
             // 
             // labelControl1
             // 
-            this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl1.Appearance.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl1.Appearance.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.labelControl1.Appearance.Options.UseFont = true;
             this.labelControl1.Appearance.Options.UseForeColor = true;
-            this.labelControl1.Location = new System.Drawing.Point(187, 90);
+            this.labelControl1.Location = new System.Drawing.Point(30, 92);
+            this.labelControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(149, 19);
+            this.labelControl1.Size = new System.Drawing.Size(204, 29);
             this.labelControl1.TabIndex = 33;
             this.labelControl1.Text = "Mật khẩu hiện tại:";
             // 
             // labelControl3
             // 
-            this.labelControl3.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl3.Appearance.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl3.Appearance.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.labelControl3.Appearance.Options.UseFont = true;
             this.labelControl3.Appearance.Options.UseForeColor = true;
-            this.labelControl3.Location = new System.Drawing.Point(187, 209);
+            this.labelControl3.Location = new System.Drawing.Point(30, 238);
+            this.labelControl3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(190, 19);
+            this.labelControl3.Size = new System.Drawing.Size(265, 29);
             this.labelControl3.TabIndex = 35;
             this.labelControl3.Text = "Nhập lại mật khẩu mới:";
             // 
             // labelControl2
             // 
-            this.labelControl2.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelControl2.Appearance.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl2.Appearance.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.labelControl2.Appearance.Options.UseFont = true;
             this.labelControl2.Appearance.Options.UseForeColor = true;
-            this.labelControl2.Location = new System.Drawing.Point(187, 151);
+            this.labelControl2.Location = new System.Drawing.Point(30, 167);
+            this.labelControl2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(117, 19);
+            this.labelControl2.Size = new System.Drawing.Size(164, 29);
             this.labelControl2.TabIndex = 34;
             this.labelControl2.Text = "Mật khẩu mới:";
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Image = global::QuanLyBenhVien.Properties.Resources._352084_save_guardar_icon;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(365, 340);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(128, 45);
+            this.button1.TabIndex = 39;
+            this.button1.Text = "Lưu";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // uc_Doimatkhau
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.button1);
             this.Controls.Add(this.txtpassnew2);
@@ -116,8 +127,9 @@ namespace QuanLyBenhVien.UI
             this.Controls.Add(this.labelControl1);
             this.Controls.Add(this.labelControl3);
             this.Controls.Add(this.labelControl2);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "uc_Doimatkhau";
-            this.Size = new System.Drawing.Size(685, 382);
+            this.Size = new System.Drawing.Size(539, 427);
             this.Load += new System.EventHandler(this.uc_Doimatkhau_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
