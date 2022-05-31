@@ -20,6 +20,7 @@ namespace QuanLyBenhVien
         uc_BenhNhan ucKhachHang;
         uc_Doimatkhau ucDoimatkhau;
         uc_ThanhToan ucThanhToan;
+        uc_Blank ucBlank;
         uc_Thongtincanhan ucThongtincanhan;
         private void accordionControlElement1_Click(object sender, EventArgs e)
         {
@@ -60,10 +61,18 @@ namespace QuanLyBenhVien
 
         private void mnTennhanvien_Click(object sender, EventArgs e)
         {
+            ucBlank = new uc_Blank();
+            ucBlank.Dock = DockStyle.Fill;
+            mainContainer.Controls.Add(ucBlank);
+            ucBlank.BringToFront();
             if (ucThongtincanhan == null)
             {
                 ucThongtincanhan = new uc_Thongtincanhan();
                 ucThongtincanhan.Dock = DockStyle.Fill;
+                ucThongtincanhan.Location = new Point(
+                mainContainer.ClientSize.Width / 2 - ucThongtincanhan.Size.Width / 2,
+                  mainContainer.ClientSize.Height / 2 - ucThongtincanhan.Size.Height / 2);
+                ucThongtincanhan.Anchor = AnchorStyles.None;
                 mainContainer.Controls.Add(ucThongtincanhan);
                 ucThongtincanhan.BringToFront();
             }
@@ -76,10 +85,12 @@ namespace QuanLyBenhVien
 
         private void mcDoimatkhau_Click(object sender, EventArgs e)
         {
+            
             if (ucDoimatkhau == null)
             {
                 ucDoimatkhau = new uc_Doimatkhau();
                 ucDoimatkhau.Dock = DockStyle.Fill;
+
                 mainContainer.Controls.Add(ucDoimatkhau);
                 ucDoimatkhau.BringToFront();
             }

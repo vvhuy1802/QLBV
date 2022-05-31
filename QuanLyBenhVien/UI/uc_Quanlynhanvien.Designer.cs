@@ -66,6 +66,8 @@ namespace QuanLyBenhVien.UI
             this.cbStaffPosition = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnSave = new System.Windows.Forms.Button();
+            this.btnStaffCancel = new System.Windows.Forms.Button();
             this.label15 = new System.Windows.Forms.Label();
             this.txbStaffSupportMoney = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
@@ -79,8 +81,6 @@ namespace QuanLyBenhVien.UI
             this.nupStaffLevel = new System.Windows.Forms.NumericUpDown();
             this.label3 = new System.Windows.Forms.Label();
             this.nudStaffExp = new System.Windows.Forms.NumericUpDown();
-            this.btnSave = new System.Windows.Forms.Button();
-            this.btnStaffCancel = new System.Windows.Forms.Button();
             this.btnStaffDelete = new System.Windows.Forms.Button();
             this.btnStaffEdit = new System.Windows.Forms.Button();
             this.pbStaffImage = new System.Windows.Forms.PictureBox();
@@ -111,7 +111,7 @@ namespace QuanLyBenhVien.UI
             this.colRate,
             this.colSupMoney});
             this.dgvStaffList.Location = new System.Drawing.Point(35, 75);
-            this.dgvStaffList.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvStaffList.Margin = new System.Windows.Forms.Padding(4);
             this.dgvStaffList.Name = "dgvStaffList";
             this.dgvStaffList.RowHeadersWidth = 51;
             this.dgvStaffList.Size = new System.Drawing.Size(753, 543);
@@ -241,12 +241,15 @@ namespace QuanLyBenhVien.UI
             // btnAddStaff
             // 
             this.btnAddStaff.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddStaff.Location = new System.Drawing.Point(65, 481);
-            this.btnAddStaff.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAddStaff.Image = global::QuanLyBenhVien.Properties.Resources._309049_add_user_human_person_plus_icon;
+            this.btnAddStaff.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAddStaff.Location = new System.Drawing.Point(54, 481);
+            this.btnAddStaff.Margin = new System.Windows.Forms.Padding(4);
             this.btnAddStaff.Name = "btnAddStaff";
-            this.btnAddStaff.Size = new System.Drawing.Size(84, 38);
+            this.btnAddStaff.Size = new System.Drawing.Size(108, 38);
             this.btnAddStaff.TabIndex = 112;
             this.btnAddStaff.Text = "Thêm";
+            this.btnAddStaff.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnAddStaff.UseVisualStyleBackColor = true;
             this.btnAddStaff.Click += new System.EventHandler(this.btnAddStaff_Click);
             // 
@@ -257,7 +260,7 @@ namespace QuanLyBenhVien.UI
             "Nam",
             "Nữ"});
             this.cbStaffSex.Location = new System.Drawing.Point(155, 192);
-            this.cbStaffSex.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbStaffSex.Margin = new System.Windows.Forms.Padding(4);
             this.cbStaffSex.Name = "cbStaffSex";
             this.cbStaffSex.Size = new System.Drawing.Size(165, 24);
             this.cbStaffSex.TabIndex = 109;
@@ -266,7 +269,7 @@ namespace QuanLyBenhVien.UI
             // 
             this.dtpStaffBirth.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpStaffBirth.Location = new System.Drawing.Point(293, 101);
-            this.dtpStaffBirth.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dtpStaffBirth.Margin = new System.Windows.Forms.Padding(4);
             this.dtpStaffBirth.Name = "dtpStaffBirth";
             this.dtpStaffBirth.Size = new System.Drawing.Size(272, 30);
             this.dtpStaffBirth.TabIndex = 108;
@@ -275,7 +278,7 @@ namespace QuanLyBenhVien.UI
             // txbStaffCountry
             // 
             this.txbStaffCountry.Location = new System.Drawing.Point(157, 235);
-            this.txbStaffCountry.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbStaffCountry.Margin = new System.Windows.Forms.Padding(4);
             this.txbStaffCountry.Name = "txbStaffCountry";
             this.txbStaffCountry.Size = new System.Drawing.Size(163, 22);
             this.txbStaffCountry.TabIndex = 106;
@@ -283,7 +286,7 @@ namespace QuanLyBenhVien.UI
             // txbStaffNum
             // 
             this.txbStaffNum.Location = new System.Drawing.Point(293, 144);
-            this.txbStaffNum.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbStaffNum.Margin = new System.Windows.Forms.Padding(4);
             this.txbStaffNum.Name = "txbStaffNum";
             this.txbStaffNum.Size = new System.Drawing.Size(272, 22);
             this.txbStaffNum.TabIndex = 105;
@@ -291,7 +294,7 @@ namespace QuanLyBenhVien.UI
             // txbStaffName
             // 
             this.txbStaffName.Location = new System.Drawing.Point(293, 68);
-            this.txbStaffName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbStaffName.Margin = new System.Windows.Forms.Padding(4);
             this.txbStaffName.Name = "txbStaffName";
             this.txbStaffName.Size = new System.Drawing.Size(272, 22);
             this.txbStaffName.TabIndex = 104;
@@ -299,7 +302,7 @@ namespace QuanLyBenhVien.UI
             // txbStaffCMND
             // 
             this.txbStaffCMND.Location = new System.Drawing.Point(293, 30);
-            this.txbStaffCMND.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbStaffCMND.Margin = new System.Windows.Forms.Padding(4);
             this.txbStaffCMND.Name = "txbStaffCMND";
             this.txbStaffCMND.ReadOnly = true;
             this.txbStaffCMND.Size = new System.Drawing.Size(272, 22);
@@ -380,7 +383,7 @@ namespace QuanLyBenhVien.UI
             // 
             this.btnSearchStaff.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSearchStaff.Location = new System.Drawing.Point(35, 25);
-            this.btnSearchStaff.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnSearchStaff.Margin = new System.Windows.Forms.Padding(4);
             this.btnSearchStaff.Name = "btnSearchStaff";
             this.btnSearchStaff.Size = new System.Drawing.Size(121, 36);
             this.btnSearchStaff.TabIndex = 116;
@@ -413,7 +416,7 @@ namespace QuanLyBenhVien.UI
             // txbStaffLocate
             // 
             this.txbStaffLocate.Location = new System.Drawing.Point(155, 276);
-            this.txbStaffLocate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbStaffLocate.Margin = new System.Windows.Forms.Padding(4);
             this.txbStaffLocate.Multiline = true;
             this.txbStaffLocate.Name = "txbStaffLocate";
             this.txbStaffLocate.Size = new System.Drawing.Size(400, 37);
@@ -438,7 +441,7 @@ namespace QuanLyBenhVien.UI
             "Bác sĩ",
             "Quản lý"});
             this.cbStaffPosition.Location = new System.Drawing.Point(157, 323);
-            this.cbStaffPosition.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbStaffPosition.Margin = new System.Windows.Forms.Padding(4);
             this.cbStaffPosition.Name = "cbStaffPosition";
             this.cbStaffPosition.Size = new System.Drawing.Size(150, 24);
             this.cbStaffPosition.TabIndex = 122;
@@ -499,6 +502,36 @@ namespace QuanLyBenhVien.UI
             this.panel1.Size = new System.Drawing.Size(636, 543);
             this.panel1.TabIndex = 123;
             // 
+            // btnSave
+            // 
+            this.btnSave.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSave.Image = global::QuanLyBenhVien.Properties.Resources._171273_backup_guardar_safe_save_store_icon;
+            this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSave.Location = new System.Drawing.Point(65, 476);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(84, 43);
+            this.btnSave.TabIndex = 137;
+            this.btnSave.Text = "Lưu";
+            this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
+            // 
+            // btnStaffCancel
+            // 
+            this.btnStaffCancel.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStaffCancel.Image = global::QuanLyBenhVien.Properties.Resources._211652_close_icon;
+            this.btnStaffCancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnStaffCancel.Location = new System.Drawing.Point(401, 478);
+            this.btnStaffCancel.Margin = new System.Windows.Forms.Padding(4);
+            this.btnStaffCancel.Name = "btnStaffCancel";
+            this.btnStaffCancel.Size = new System.Drawing.Size(91, 41);
+            this.btnStaffCancel.TabIndex = 136;
+            this.btnStaffCancel.Text = "Hủy";
+            this.btnStaffCancel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnStaffCancel.UseVisualStyleBackColor = true;
+            this.btnStaffCancel.Click += new System.EventHandler(this.btnStaffCancel_Click);
+            // 
             // label15
             // 
             this.label15.AutoSize = true;
@@ -513,7 +546,7 @@ namespace QuanLyBenhVien.UI
             // txbStaffSupportMoney
             // 
             this.txbStaffSupportMoney.Location = new System.Drawing.Point(157, 405);
-            this.txbStaffSupportMoney.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbStaffSupportMoney.Margin = new System.Windows.Forms.Padding(4);
             this.txbStaffSupportMoney.Name = "txbStaffSupportMoney";
             this.txbStaffSupportMoney.Size = new System.Drawing.Size(150, 22);
             this.txbStaffSupportMoney.TabIndex = 134;
@@ -533,7 +566,7 @@ namespace QuanLyBenhVien.UI
             // txbStaffRate
             // 
             this.txbStaffRate.Location = new System.Drawing.Point(472, 366);
-            this.txbStaffRate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbStaffRate.Margin = new System.Windows.Forms.Padding(4);
             this.txbStaffRate.Name = "txbStaffRate";
             this.txbStaffRate.Size = new System.Drawing.Size(83, 22);
             this.txbStaffRate.TabIndex = 132;
@@ -563,7 +596,7 @@ namespace QuanLyBenhVien.UI
             // txbStaffSalary
             // 
             this.txbStaffSalary.Location = new System.Drawing.Point(157, 366);
-            this.txbStaffSalary.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbStaffSalary.Margin = new System.Windows.Forms.Padding(4);
             this.txbStaffSalary.Name = "txbStaffSalary";
             this.txbStaffSalary.Size = new System.Drawing.Size(150, 22);
             this.txbStaffSalary.TabIndex = 129;
@@ -599,7 +632,7 @@ namespace QuanLyBenhVien.UI
             "II",
             "III"});
             this.cbStaffRank.Location = new System.Drawing.Point(385, 321);
-            this.cbStaffRank.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbStaffRank.Margin = new System.Windows.Forms.Padding(4);
             this.cbStaffRank.Name = "cbStaffRank";
             this.cbStaffRank.Size = new System.Drawing.Size(50, 24);
             this.cbStaffRank.TabIndex = 126;
@@ -632,36 +665,6 @@ namespace QuanLyBenhVien.UI
             this.nudStaffExp.Name = "nudStaffExp";
             this.nudStaffExp.Size = new System.Drawing.Size(53, 30);
             this.nudStaffExp.TabIndex = 123;
-            // 
-            // btnSave
-            // 
-            this.btnSave.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSave.Image = global::QuanLyBenhVien.Properties.Resources._171273_backup_guardar_safe_save_store_icon;
-            this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSave.Location = new System.Drawing.Point(65, 476);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(4);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(84, 43);
-            this.btnSave.TabIndex = 137;
-            this.btnSave.Text = "Lưu";
-            this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSave.UseVisualStyleBackColor = true;
-            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
-            // 
-            // btnStaffCancel
-            // 
-            this.btnStaffCancel.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnStaffCancel.Image = global::QuanLyBenhVien.Properties.Resources._211652_close_icon;
-            this.btnStaffCancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnStaffCancel.Location = new System.Drawing.Point(401, 478);
-            this.btnStaffCancel.Margin = new System.Windows.Forms.Padding(4);
-            this.btnStaffCancel.Name = "btnStaffCancel";
-            this.btnStaffCancel.Size = new System.Drawing.Size(91, 41);
-            this.btnStaffCancel.TabIndex = 136;
-            this.btnStaffCancel.Text = "Hủy";
-            this.btnStaffCancel.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnStaffCancel.UseVisualStyleBackColor = true;
-            this.btnStaffCancel.Click += new System.EventHandler(this.btnStaffCancel_Click);
             // 
             // btnStaffDelete
             // 
@@ -714,7 +717,7 @@ namespace QuanLyBenhVien.UI
             this.Controls.Add(this.btnSearchStaff);
             this.Controls.Add(this.txbtimkiem);
             this.Controls.Add(this.dgvStaffList);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "uc_Quanlynhanvien";
             this.Size = new System.Drawing.Size(1572, 656);
             this.Load += new System.EventHandler(this.uc_Quanlynhanvien_Load);

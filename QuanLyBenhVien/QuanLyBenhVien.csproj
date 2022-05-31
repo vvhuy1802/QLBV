@@ -159,6 +159,12 @@
     <Compile Include="TTDangKycs.Designer.cs">
       <DependentUpon>TTDangKycs.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\uc_Blank.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\uc_Blank.Designer.cs">
+      <DependentUpon>uc_Blank.cs</DependentUpon>
+    </Compile>
     <Compile Include="UI\uc_Doimatkhau.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -283,6 +289,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TTDangKycs.resx">
       <DependentUpon>TTDangKycs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\uc_Blank.resx">
+      <DependentUpon>uc_Blank.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\uc_Doimatkhau.resx">
       <DependentUpon>uc_Doimatkhau.cs</DependentUpon>

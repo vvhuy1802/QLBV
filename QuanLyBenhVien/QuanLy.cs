@@ -20,6 +20,7 @@ namespace QuanLyBenhVien
         uc_Quanlyloaithuoc ucQuanlyloaithuoc;
         uc_Quanlythongke ucQuanlythongke;
         uc_Thongtincanhan2 ucThongtincanhan2;
+        uc_Blank ucBlank;
         uc_Doimatkhau2 ucDoimatkhau2;
         public QuanLy()
         {
@@ -118,10 +119,17 @@ namespace QuanLyBenhVien
 
         private void mnTennhanvien_Click(object sender, EventArgs e)
         {
+            ucBlank = new uc_Blank();
+            ucBlank.Dock = DockStyle.Fill;
+            mainContainer2.Controls.Add(ucBlank);
+            ucBlank.BringToFront();
             if (ucThongtincanhan2 == null)
             {
                 ucThongtincanhan2 = new uc_Thongtincanhan2();
-                ucThongtincanhan2.Dock = DockStyle.Fill;
+                ucThongtincanhan2.Location = new Point(
+                mainContainer2.ClientSize.Width / 2 - ucThongtincanhan2.Size.Width / 2,
+                  mainContainer2.ClientSize.Height / 2 - ucThongtincanhan2.Size.Height / 2);
+                ucThongtincanhan2.Anchor = AnchorStyles.None;
                 mainContainer2.Controls.Add(ucThongtincanhan2);
                 ucThongtincanhan2.BringToFront();
             }

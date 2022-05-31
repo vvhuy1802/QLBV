@@ -54,9 +54,10 @@ namespace QuanLyBenhVien
             // mainContainer2
             // 
             this.mainContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mainContainer2.Location = new System.Drawing.Point(260, 31);
+            this.mainContainer2.Location = new System.Drawing.Point(303, 39);
+            this.mainContainer2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.mainContainer2.Name = "mainContainer2";
-            this.mainContainer2.Size = new System.Drawing.Size(457, 442);
+            this.mainContainer2.Size = new System.Drawing.Size(533, 543);
             this.mainContainer2.TabIndex = 0;
             // 
             // accordionControl1
@@ -67,10 +68,11 @@ namespace QuanLyBenhVien
             this.mnQuanlydichvu,
             this.mnQuanlyhethong,
             this.mnThongtinquanly});
-            this.accordionControl1.Location = new System.Drawing.Point(0, 31);
+            this.accordionControl1.Location = new System.Drawing.Point(0, 39);
+            this.accordionControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.accordionControl1.Name = "accordionControl1";
             this.accordionControl1.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.Touch;
-            this.accordionControl1.Size = new System.Drawing.Size(260, 442);
+            this.accordionControl1.Size = new System.Drawing.Size(303, 543);
             this.accordionControl1.TabIndex = 1;
             this.accordionControl1.ViewType = DevExpress.XtraBars.Navigation.AccordionControlViewType.HamburgerMenu;
             // 
@@ -187,8 +189,9 @@ namespace QuanLyBenhVien
             this.fluentDesignFormControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.lbltieude2});
             this.fluentDesignFormControl1.Location = new System.Drawing.Point(0, 0);
+            this.fluentDesignFormControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.fluentDesignFormControl1.Name = "fluentDesignFormControl1";
-            this.fluentDesignFormControl1.Size = new System.Drawing.Size(717, 31);
+            this.fluentDesignFormControl1.Size = new System.Drawing.Size(836, 39);
             this.fluentDesignFormControl1.TabIndex = 2;
             this.fluentDesignFormControl1.TabStop = false;
             this.fluentDesignFormControl1.TitleItemLinks.Add(this.lbltieude2);
@@ -205,17 +208,19 @@ namespace QuanLyBenhVien
             // 
             // QuanLy
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(717, 473);
+            this.ClientSize = new System.Drawing.Size(836, 582);
             this.ControlContainer = this.mainContainer2;
             this.Controls.Add(this.mainContainer2);
             this.Controls.Add(this.accordionControl1);
             this.Controls.Add(this.fluentDesignFormControl1);
             this.FluentDesignFormControl = this.fluentDesignFormControl1;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "QuanLy";
             this.NavigationControl = this.accordionControl1;
             this.Text = "Quản lý";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.QuanLy_Load);
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).EndInit();

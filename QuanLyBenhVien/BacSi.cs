@@ -16,6 +16,7 @@ namespace QuanLyBenhVien
         uc_Quanlybenh ucQuanlybenh;
         uc_Quanlydonthuoc ucQuanlydonthuoc;
         uc_Thongtincanhan1 ucThongtincanhan1;
+        uc_Blank ucBlank;
         uc_Doimatkhau1 ucDoimatkhau1;
         public BacSi()
         {
@@ -56,10 +57,18 @@ namespace QuanLyBenhVien
 
         private void mnTennhanvien_Click(object sender, EventArgs e)
         {
+            ucBlank = new uc_Blank();
+            ucBlank.Dock = DockStyle.Fill;
+            mainContainer1.Controls.Add(ucBlank);
+            ucBlank.BringToFront();
             if (ucThongtincanhan1 == null)
             {
                 ucThongtincanhan1 = new uc_Thongtincanhan1();
                 ucThongtincanhan1.Dock = DockStyle.Fill;
+                ucThongtincanhan1.Location = new Point(
+                mainContainer1.ClientSize.Width / 2 - ucThongtincanhan1.Size.Width / 2,
+                  mainContainer1.ClientSize.Height / 2 - ucThongtincanhan1.Size.Height / 2);
+                ucThongtincanhan1.Anchor = AnchorStyles.None;
                 mainContainer1.Controls.Add(ucThongtincanhan1);
                 ucThongtincanhan1.BringToFront();
             }
