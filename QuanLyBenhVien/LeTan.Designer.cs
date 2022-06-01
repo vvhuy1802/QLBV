@@ -47,9 +47,10 @@ namespace QuanLyBenhVien
             // mainContainer
             // 
             this.mainContainer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mainContainer.Location = new System.Drawing.Point(260, 31);
+            this.mainContainer.Location = new System.Drawing.Point(303, 39);
+            this.mainContainer.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.mainContainer.Name = "mainContainer";
-            this.mainContainer.Size = new System.Drawing.Size(455, 442);
+            this.mainContainer.Size = new System.Drawing.Size(995, 760);
             this.mainContainer.TabIndex = 0;
             this.mainContainer.Click += new System.EventHandler(this.mainContainer_Click);
             // 
@@ -59,10 +60,11 @@ namespace QuanLyBenhVien
             this.accordionControl1.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.mnQuanlybenhnhan,
             this.mcThongtincanhan});
-            this.accordionControl1.Location = new System.Drawing.Point(0, 31);
+            this.accordionControl1.Location = new System.Drawing.Point(0, 39);
+            this.accordionControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.accordionControl1.Name = "accordionControl1";
             this.accordionControl1.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.Touch;
-            this.accordionControl1.Size = new System.Drawing.Size(260, 442);
+            this.accordionControl1.Size = new System.Drawing.Size(303, 760);
             this.accordionControl1.TabIndex = 1;
             this.accordionControl1.ViewType = DevExpress.XtraBars.Navigation.AccordionControlViewType.HamburgerMenu;
             // 
@@ -127,16 +129,17 @@ namespace QuanLyBenhVien
             this.fluentDesignFormControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.lbltieude});
             this.fluentDesignFormControl1.Location = new System.Drawing.Point(0, 0);
+            this.fluentDesignFormControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.fluentDesignFormControl1.Name = "fluentDesignFormControl1";
-            this.fluentDesignFormControl1.Size = new System.Drawing.Size(715, 31);
+            this.fluentDesignFormControl1.Size = new System.Drawing.Size(1298, 39);
             this.fluentDesignFormControl1.TabIndex = 2;
             this.fluentDesignFormControl1.TabStop = false;
-            this.fluentDesignFormControl1.TitleItemLinks.Add(this.lbltieude);
+            this.fluentDesignFormControl1.TitleItemLinks.Add(this.lbltieude, true);
             this.fluentDesignFormControl1.Click += new System.EventHandler(this.fluentDesignFormControl1_Click);
             // 
             // lbltieude
             // 
-            this.lbltieude.Caption = "Demo Lễ tân";
+            this.lbltieude.Caption = "Lễ tân";
             this.lbltieude.Id = 0;
             this.lbltieude.ItemAppearance.Normal.BackColor = System.Drawing.Color.White;
             this.lbltieude.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -149,17 +152,19 @@ namespace QuanLyBenhVien
             // 
             // LeTan
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(715, 473);
+            this.ClientSize = new System.Drawing.Size(1298, 799);
             this.ControlContainer = this.mainContainer;
             this.Controls.Add(this.mainContainer);
             this.Controls.Add(this.accordionControl1);
             this.Controls.Add(this.fluentDesignFormControl1);
             this.FluentDesignFormControl = this.fluentDesignFormControl1;
+            this.IconOptions.Image = global::QuanLyBenhVien.Properties.Resources.camila_vignoni_fondo_hospital;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "LeTan";
             this.NavigationControl = this.accordionControl1;
-            this.Text = "Quản lý lễ tân";
+            this.Text = "Lễ Tân";
             this.Load += new System.EventHandler(this.LeTan_Load);
             ((System.ComponentModel.ISupportInitialize)(this.accordionControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.fluentDesignFormControl1)).EndInit();

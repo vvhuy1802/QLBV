@@ -13,7 +13,7 @@ namespace QuanLyBenhVien.UI
 {
     public partial class uc_BenhNhan : UserControl
     {
-        string str = @"data source=ADMIN\SQLEXPRESS;initial catalog=QuanLyBenhVien;integrated security=True";
+        string str = @"data source=HUY\SQLEXPRESS;initial catalog=QuanLyBenhVien;integrated security=True";
         SqlConnection conn = new SqlConnection();
         SqlDataAdapter da = new SqlDataAdapter();
         DataTable dt = new DataTable();
@@ -190,6 +190,109 @@ namespace QuanLyBenhVien.UI
             da.Fill(dt);
             dataGridView1.DataSource = dt;
             dataGridView1.Refresh();
+            BindingBenhnhan(dataGridView1);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            using (QuanLyBenhVienEntities db = new QuanLyBenhVienEntities())
+            {
+                try
+                {
+                    string cmnd = txtCMND.Text;
+                    if (db.BenhNhans.Select(m => m.CMND).Contains(cmnd))
+                    {
+                        MessageBox.Show("This CMND was in database!");
+                        return;
+                    }
+                    string cmndbs = txtCMNDBS.Text;
+                    string ten = txtTen.Text;
+                    DateTime ngaysinh = DateTime.Parse(dtpNgaysinh.Text);
+                    ngaysinh.ToString("dd-MM-yyyy");
+                    string gioitinh = cbxGioitinh.Text;
+                    string diachi = txtDiaChi.Text;
+                    string sdt = txtSDT.Text;
+                    string quoctich = txtQuoctich.Text;
+                    int baohiem = int.Parse(cbxBaohiem.Text);
+                    DateTime nhapvien = DateTime.Parse(dtpNhapvien.Text);
+                    BenhNhan p = new BenhNhan()
+                    {
+                        CMND = cmnd,
+                        CMNDBS = cmndbs,
+                        Ten = ten,
+                        NgaySinh = ngaysinh,
+                        GioiTinh = gioitinh,
+                        DiaChi = diachi,
+                        SDT = sdt,
+                        QuocTich = quoctich,
+                        BaoHiem = baohiem,
+                        NhapVien = nhapvien
+                    };
+                    db.BenhNhans.Add(p);
+                    db.SaveChanges();
+                    MessageBox.Show("Added Successfully!");
+                    LoadBenhNhan(dataGridView1);
+                }
+                catch { MessageBox.Show("Please fill in information!"); }
+            }
+            BindingBenhnhan(dataGridView1);
+        }
+
+        private void barButtonItem2_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            using (QuanLyBenhVienEntities db = new QuanLyBenhVienEntities())
+            {
+                try
+                {
+                    string cmnd = txtCMND.Text;
+                    BenhNhan dv = db.BenhNhans.Find(cmnd);
+                    string cmndbs = txtCMNDBS.Text;
+                    string ten = txtTen.Text;
+                    DateTime ngaysinh = DateTime.Parse(dtpNgaysinh.Text);
+                    string gioitinh = cbxGioitinh.Text;
+                    string diachi = txtDiaChi.Text;
+                    string sdt = txtSDT.Text;
+                    string quoctich = txtQuoctich.Text;
+                    int baohiem = int.Parse(cbxBaohiem.Text);
+                    DateTime nhapvien = DateTime.Parse(dtpNhapvien.Text);
+                    dv.CMND = cmnd;
+                    dv.CMNDBS = cmndbs;
+                    dv.Ten = ten;
+                    dv.NgaySinh = ngaysinh;
+                    dv.GioiTinh = gioitinh;
+                    dv.DiaChi = diachi;
+                    dv.SDT = sdt;
+                    dv.QuocTich = quoctich;
+                    dv.BaoHiem = baohiem;
+                    dv.NhapVien = nhapvien;
+                    db.SaveChanges();
+                    MessageBox.Show("Chanaged!");
+                    LoadBenhNhan(dataGridView1);
+                }
+                catch { }
+            }
+            BindingBenhnhan(dataGridView1);
+        }
+
+        private void barButtonItem3_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            using (QuanLyBenhVienEntities db = new QuanLyBenhVienEntities())
+            {
+                try
+                {
+                    string cmnd = txtCMND.Text;
+                    db.BenhNhans.Remove(db.BenhNhans.Find(cmnd));
+                    db.SaveChanges();
+                    MessageBox.Show("Removed!");
+                    LoadBenhNhan(dataGridView1);
+                }
+                catch { }
+            }
             BindingBenhnhan(dataGridView1);
         }
     }

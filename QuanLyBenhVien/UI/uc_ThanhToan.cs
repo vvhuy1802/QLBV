@@ -212,5 +212,10 @@ namespace QuanLyBenhVien.UI
             txbtong.Text = "0";
             txbKhachDua.Text = "0";
         }
+
+        private void txbKhachDua_TextChanged(object sender, EventArgs e)
+        {
+            txbTienThua.Text = (- int.Parse(txbtong.Text) + int.Parse(txbKhachDua.Text)).ToString();
+        }
     }
 }
