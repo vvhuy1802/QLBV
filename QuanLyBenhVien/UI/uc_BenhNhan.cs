@@ -13,7 +13,11 @@ namespace QuanLyBenhVien.UI
 {
     public partial class uc_BenhNhan : UserControl
     {
+<<<<<<< HEAD
         string str = @"data source=HUY\SQLEXPRESS;initial catalog=QuanLyBenhVien;integrated security=True";
+=======
+        string str = @"data source=.\SQLEXPRESS;initial catalog=QuanLyBenhVien;integrated security=True";
+>>>>>>> a839fa11dc6b18776d78f8f93cd73a2b2ad19c38
         SqlConnection conn = new SqlConnection();
         SqlDataAdapter da = new SqlDataAdapter();
         DataTable dt = new DataTable();

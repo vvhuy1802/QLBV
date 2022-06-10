@@ -127,17 +127,7 @@ namespace QuanLyBenhVien.UI
             }
         }
 
-        private void pbStaffImage_Click(object sender, EventArgs e)
-        {
-            using(OpenFileDialog ofd = new OpenFileDialog() { Filter = "JPED|*.jpg", ValidateNames = true, Multiselect = false })
-            {
-                if(ofd.ShowDialog() == DialogResult.OK)
-                {
-                    fileName = ofd.FileName;
-                    pbStaffImage.Image = Image.FromFile(fileName);
-                }            
-            }
-        }
+       
 
         private void btnAddStaff_Click(object sender, EventArgs e)
         {

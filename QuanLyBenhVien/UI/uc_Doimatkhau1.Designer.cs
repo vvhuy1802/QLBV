@@ -43,8 +43,8 @@ namespace QuanLyBenhVien.UI
             this.button1.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Image = global::QuanLyBenhVien.Properties.Resources._352084_save_guardar_icon;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(394, 329);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Location = new System.Drawing.Point(640, 479);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(124, 48);
             this.button1.TabIndex = 46;
@@ -55,26 +55,26 @@ namespace QuanLyBenhVien.UI
             // 
             // txtpassnew2
             // 
-            this.txtpassnew2.Location = new System.Drawing.Point(331, 246);
-            this.txtpassnew2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtpassnew2.Location = new System.Drawing.Point(499, 398);
+            this.txtpassnew2.Margin = new System.Windows.Forms.Padding(4);
             this.txtpassnew2.Name = "txtpassnew2";
-            this.txtpassnew2.Size = new System.Drawing.Size(187, 22);
+            this.txtpassnew2.Size = new System.Drawing.Size(265, 22);
             this.txtpassnew2.TabIndex = 45;
             // 
             // txtpassnew1
             // 
-            this.txtpassnew1.Location = new System.Drawing.Point(331, 175);
-            this.txtpassnew1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtpassnew1.Location = new System.Drawing.Point(499, 327);
+            this.txtpassnew1.Margin = new System.Windows.Forms.Padding(4);
             this.txtpassnew1.Name = "txtpassnew1";
-            this.txtpassnew1.Size = new System.Drawing.Size(187, 22);
+            this.txtpassnew1.Size = new System.Drawing.Size(265, 22);
             this.txtpassnew1.TabIndex = 44;
             // 
             // txtpassold
             // 
-            this.txtpassold.Location = new System.Drawing.Point(331, 95);
-            this.txtpassold.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtpassold.Location = new System.Drawing.Point(499, 247);
+            this.txtpassold.Margin = new System.Windows.Forms.Padding(4);
             this.txtpassold.Name = "txtpassold";
-            this.txtpassold.Size = new System.Drawing.Size(187, 22);
+            this.txtpassold.Size = new System.Drawing.Size(265, 22);
             this.txtpassold.TabIndex = 43;
             // 
             // labelControl1
@@ -83,8 +83,8 @@ namespace QuanLyBenhVien.UI
             this.labelControl1.Appearance.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.labelControl1.Appearance.Options.UseFont = true;
             this.labelControl1.Appearance.Options.UseForeColor = true;
-            this.labelControl1.Location = new System.Drawing.Point(49, 97);
-            this.labelControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.labelControl1.Location = new System.Drawing.Point(234, 247);
+            this.labelControl1.Margin = new System.Windows.Forms.Padding(4);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(204, 29);
             this.labelControl1.TabIndex = 40;
@@ -96,8 +96,8 @@ namespace QuanLyBenhVien.UI
             this.labelControl3.Appearance.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.labelControl3.Appearance.Options.UseFont = true;
             this.labelControl3.Appearance.Options.UseForeColor = true;
-            this.labelControl3.Location = new System.Drawing.Point(49, 243);
-            this.labelControl3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.labelControl3.Location = new System.Drawing.Point(173, 393);
+            this.labelControl3.Margin = new System.Windows.Forms.Padding(4);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(265, 29);
             this.labelControl3.TabIndex = 42;
@@ -109,8 +109,8 @@ namespace QuanLyBenhVien.UI
             this.labelControl2.Appearance.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.labelControl2.Appearance.Options.UseFont = true;
             this.labelControl2.Appearance.Options.UseForeColor = true;
-            this.labelControl2.Location = new System.Drawing.Point(49, 172);
-            this.labelControl2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.labelControl2.Location = new System.Drawing.Point(274, 320);
+            this.labelControl2.Margin = new System.Windows.Forms.Padding(4);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(164, 29);
             this.labelControl2.TabIndex = 41;
@@ -127,9 +127,9 @@ namespace QuanLyBenhVien.UI
             this.Controls.Add(this.labelControl1);
             this.Controls.Add(this.labelControl3);
             this.Controls.Add(this.labelControl2);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "uc_Doimatkhau1";
-            this.Size = new System.Drawing.Size(565, 434);
+            this.Size = new System.Drawing.Size(1180, 800);
             this.ResumeLayout(false);
             this.PerformLayout();
 

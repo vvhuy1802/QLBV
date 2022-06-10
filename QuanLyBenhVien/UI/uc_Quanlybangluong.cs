@@ -89,5 +89,11 @@ namespace QuanLyBenhVien.UI
         {
 
         }
+
+        private void btnSearchStaff_Click(object sender, EventArgs e)
+        {
+            String keyword = txbtimkiem.Text.Trim();
+            dgvSalary.DataSource = entities.NhanViens.Where(emp => emp.Ten.Contains(keyword)).ToList();
+        }
     }
 }

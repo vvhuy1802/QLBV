@@ -51,6 +51,8 @@ namespace QuanLyBenhVien.UI
             this.label9 = new System.Windows.Forms.Label();
             this.txbRate = new System.Windows.Forms.TextBox();
             this.txbSalary = new System.Windows.Forms.TextBox();
+            this.btnSearchStaff = new System.Windows.Forms.Button();
+            this.txbtimkiem = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSalary)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -64,8 +66,8 @@ namespace QuanLyBenhVien.UI
             this.Column3,
             this.Column4,
             this.Column5});
-            this.dgvSalary.Location = new System.Drawing.Point(33, 75);
-            this.dgvSalary.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvSalary.Location = new System.Drawing.Point(25, 120);
+            this.dgvSalary.Margin = new System.Windows.Forms.Padding(4);
             this.dgvSalary.Name = "dgvSalary";
             this.dgvSalary.RowHeadersWidth = 51;
             this.dgvSalary.Size = new System.Drawing.Size(634, 478);
@@ -159,7 +161,7 @@ namespace QuanLyBenhVien.UI
             // txbCMND
             // 
             this.txbCMND.Location = new System.Drawing.Point(205, 35);
-            this.txbCMND.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbCMND.Margin = new System.Windows.Forms.Padding(4);
             this.txbCMND.Name = "txbCMND";
             this.txbCMND.Size = new System.Drawing.Size(223, 30);
             this.txbCMND.TabIndex = 5;
@@ -167,7 +169,7 @@ namespace QuanLyBenhVien.UI
             // txbName
             // 
             this.txbName.Location = new System.Drawing.Point(205, 75);
-            this.txbName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbName.Margin = new System.Windows.Forms.Padding(4);
             this.txbName.Name = "txbName";
             this.txbName.Size = new System.Drawing.Size(223, 30);
             this.txbName.TabIndex = 6;
@@ -175,7 +177,7 @@ namespace QuanLyBenhVien.UI
             // txbSupportMoney
             // 
             this.txbSupportMoney.Location = new System.Drawing.Point(205, 198);
-            this.txbSupportMoney.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbSupportMoney.Margin = new System.Windows.Forms.Padding(4);
             this.txbSupportMoney.Name = "txbSupportMoney";
             this.txbSupportMoney.Size = new System.Drawing.Size(223, 30);
             this.txbSupportMoney.TabIndex = 8;
@@ -186,7 +188,7 @@ namespace QuanLyBenhVien.UI
             this.btnEditSalary.Image = global::QuanLyBenhVien.Properties.Resources._7030152_ui_basic_write_pen_pencil_edit_icon__1_;
             this.btnEditSalary.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEditSalary.Location = new System.Drawing.Point(248, 245);
-            this.btnEditSalary.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEditSalary.Margin = new System.Windows.Forms.Padding(4);
             this.btnEditSalary.Name = "btnEditSalary";
             this.btnEditSalary.Size = new System.Drawing.Size(95, 39);
             this.btnEditSalary.TabIndex = 9;
@@ -210,7 +212,7 @@ namespace QuanLyBenhVien.UI
             // 
             this.btnCalculateSalary.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCalculateSalary.Location = new System.Drawing.Point(248, 343);
-            this.btnCalculateSalary.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCalculateSalary.Margin = new System.Windows.Forms.Padding(4);
             this.btnCalculateSalary.Name = "btnCalculateSalary";
             this.btnCalculateSalary.Size = new System.Drawing.Size(95, 38);
             this.btnCalculateSalary.TabIndex = 15;
@@ -221,7 +223,7 @@ namespace QuanLyBenhVien.UI
             // txbCalculateSalary
             // 
             this.txbCalculateSalary.Location = new System.Drawing.Point(205, 292);
-            this.txbCalculateSalary.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbCalculateSalary.Margin = new System.Windows.Forms.Padding(4);
             this.txbCalculateSalary.Name = "txbCalculateSalary";
             this.txbCalculateSalary.Size = new System.Drawing.Size(223, 30);
             this.txbCalculateSalary.TabIndex = 18;
@@ -244,7 +246,7 @@ namespace QuanLyBenhVien.UI
             this.panel1.Controls.Add(this.txbSupportMoney);
             this.panel1.Controls.Add(this.btnEditSalary);
             this.panel1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.panel1.Location = new System.Drawing.Point(674, 75);
+            this.panel1.Location = new System.Drawing.Point(666, 120);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(489, 478);
@@ -275,7 +277,7 @@ namespace QuanLyBenhVien.UI
             // txbRate
             // 
             this.txbRate.Location = new System.Drawing.Point(205, 154);
-            this.txbRate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbRate.Margin = new System.Windows.Forms.Padding(4);
             this.txbRate.Name = "txbRate";
             this.txbRate.Size = new System.Drawing.Size(223, 30);
             this.txbRate.TabIndex = 20;
@@ -283,26 +285,50 @@ namespace QuanLyBenhVien.UI
             // txbSalary
             // 
             this.txbSalary.Location = new System.Drawing.Point(205, 113);
-            this.txbSalary.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txbSalary.Margin = new System.Windows.Forms.Padding(4);
             this.txbSalary.Name = "txbSalary";
             this.txbSalary.Size = new System.Drawing.Size(223, 30);
             this.txbSalary.TabIndex = 6;
+            // 
+            // btnSearchStaff
+            // 
+            this.btnSearchStaff.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearchStaff.Location = new System.Drawing.Point(27, 40);
+            this.btnSearchStaff.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSearchStaff.Name = "btnSearchStaff";
+            this.btnSearchStaff.Size = new System.Drawing.Size(121, 36);
+            this.btnSearchStaff.TabIndex = 118;
+            this.btnSearchStaff.Text = "Tìm kiếm";
+            this.btnSearchStaff.UseVisualStyleBackColor = true;
+            // 
+            // txbtimkiem
+            // 
+            this.txbtimkiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbtimkiem.Location = new System.Drawing.Point(177, 40);
+            this.txbtimkiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txbtimkiem.Multiline = true;
+            this.txbtimkiem.Name = "txbtimkiem";
+            this.txbtimkiem.Size = new System.Drawing.Size(482, 36);
+            this.txbtimkiem.TabIndex = 117;
             // 
             // uc_Quanlybangluong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.Controls.Add(this.btnSearchStaff);
+            this.Controls.Add(this.txbtimkiem);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.dgvSalary);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "uc_Quanlybangluong";
-            this.Size = new System.Drawing.Size(1205, 599);
+            this.Size = new System.Drawing.Size(1180, 800);
             this.Load += new System.EventHandler(this.uc_Quanlybangluong_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvSalary)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -330,5 +356,7 @@ namespace QuanLyBenhVien.UI
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.Button btnSearchStaff;
+        private System.Windows.Forms.TextBox txbtimkiem;
     }
 }
