@@ -60,10 +60,9 @@ namespace QuanLyBenhVien
             this.btndangnhap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btndangnhap.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btndangnhap.ForeColor = System.Drawing.Color.Black;
-            this.btndangnhap.Location = new System.Drawing.Point(480, 297);
-            this.btndangnhap.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btndangnhap.Location = new System.Drawing.Point(411, 241);
             this.btndangnhap.Name = "btndangnhap";
-            this.btndangnhap.Size = new System.Drawing.Size(248, 50);
+            this.btndangnhap.Size = new System.Drawing.Size(213, 41);
             this.btndangnhap.TabIndex = 11;
             this.btndangnhap.Text = "Đăng nhập";
             this.btndangnhap.UseVisualStyleBackColor = false;
@@ -71,26 +70,24 @@ namespace QuanLyBenhVien
             // 
             // sparklineEdit2
             // 
-            this.sparklineEdit2.Location = new System.Drawing.Point(525, 225);
-            this.sparklineEdit2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.sparklineEdit2.Location = new System.Drawing.Point(450, 183);
             this.sparklineEdit2.Name = "sparklineEdit2";
             this.sparklineEdit2.Properties.Appearance.BackColor = System.Drawing.Color.White;
             this.sparklineEdit2.Properties.Appearance.Options.UseBackColor = true;
-            lineSparklineView1.ScaleFactor = 1.25F;
+            lineSparklineView1.ScaleFactor = 1F;
             this.sparklineEdit2.Properties.View = lineSparklineView1;
-            this.sparklineEdit2.Size = new System.Drawing.Size(248, 1);
+            this.sparklineEdit2.Size = new System.Drawing.Size(213, 1);
             this.sparklineEdit2.TabIndex = 16;
             // 
             // sparklineEdit1
             // 
-            this.sparklineEdit1.Location = new System.Drawing.Point(525, 163);
-            this.sparklineEdit1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.sparklineEdit1.Location = new System.Drawing.Point(450, 132);
             this.sparklineEdit1.Name = "sparklineEdit1";
             this.sparklineEdit1.Properties.Appearance.BackColor = System.Drawing.Color.DimGray;
             this.sparklineEdit1.Properties.Appearance.Options.UseBackColor = true;
-            lineSparklineView2.ScaleFactor = 1.25F;
+            lineSparklineView2.ScaleFactor = 1F;
             this.sparklineEdit1.Properties.View = lineSparklineView2;
-            this.sparklineEdit1.Size = new System.Drawing.Size(248, 1);
+            this.sparklineEdit1.Size = new System.Drawing.Size(213, 1);
             this.sparklineEdit1.TabIndex = 12;
             // 
             // password
@@ -99,11 +96,11 @@ namespace QuanLyBenhVien
             this.password.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.password.Font = new System.Drawing.Font("Century", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.password.ForeColor = System.Drawing.Color.DimGray;
-            this.password.Location = new System.Drawing.Point(525, 203);
+            this.password.Location = new System.Drawing.Point(450, 165);
             this.password.Margin = new System.Windows.Forms.Padding(2);
             this.password.Name = "password";
             this.password.PasswordChar = '*';
-            this.password.Size = new System.Drawing.Size(248, 23);
+            this.password.Size = new System.Drawing.Size(213, 19);
             this.password.TabIndex = 14;
             this.password.Enter += new System.EventHandler(this.password_Enter);
             this.password.Leave += new System.EventHandler(this.password_Leave);
@@ -114,10 +111,10 @@ namespace QuanLyBenhVien
             this.username.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.username.Font = new System.Drawing.Font("Century", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.username.ForeColor = System.Drawing.Color.DimGray;
-            this.username.Location = new System.Drawing.Point(525, 141);
+            this.username.Location = new System.Drawing.Point(450, 115);
             this.username.Margin = new System.Windows.Forms.Padding(2);
             this.username.Name = "username";
-            this.username.Size = new System.Drawing.Size(248, 23);
+            this.username.Size = new System.Drawing.Size(213, 19);
             this.username.TabIndex = 13;
             this.username.Enter += new System.EventHandler(this.username_Enter);
             this.username.Leave += new System.EventHandler(this.username_Leave);
@@ -129,8 +126,9 @@ namespace QuanLyBenhVien
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(400, 460);
+            this.panel1.Size = new System.Drawing.Size(343, 374);
             this.panel1.TabIndex = 18;
             // 
             // label1
@@ -138,9 +136,9 @@ namespace QuanLyBenhVien
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(54, 266);
+            this.label1.Location = new System.Drawing.Point(46, 216);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(282, 90);
+            this.label1.Size = new System.Drawing.Size(217, 66);
             this.label1.TabIndex = 1;
             this.label1.Text = "CHÀO MỪNG ĐẾN VỚI\r\nHỆ THỐNG QUẢN LÝ\r\nBỆNH VIỆN\r\n";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -148,7 +146,8 @@ namespace QuanLyBenhVien
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(140, 78);
+            this.pictureBox1.Location = new System.Drawing.Point(120, 63);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(128, 128);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -158,18 +157,18 @@ namespace QuanLyBenhVien
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(419, 147);
+            this.label2.Location = new System.Drawing.Point(359, 119);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(96, 17);
+            this.label2.Size = new System.Drawing.Size(76, 13);
             this.label2.TabIndex = 19;
             this.label2.Text = "Tên tài khoản:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(419, 209);
+            this.label3.Location = new System.Drawing.Point(359, 170);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(69, 17);
+            this.label3.Size = new System.Drawing.Size(55, 13);
             this.label3.TabIndex = 20;
             this.label3.Text = "Mật khẩu:";
             // 
@@ -182,10 +181,9 @@ namespace QuanLyBenhVien
             this.btnSignUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSignUp.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSignUp.ForeColor = System.Drawing.Color.Black;
-            this.btnSignUp.Location = new System.Drawing.Point(480, 377);
-            this.btnSignUp.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.btnSignUp.Location = new System.Drawing.Point(411, 306);
             this.btnSignUp.Name = "btnSignUp";
-            this.btnSignUp.Size = new System.Drawing.Size(248, 50);
+            this.btnSignUp.Size = new System.Drawing.Size(213, 41);
             this.btnSignUp.TabIndex = 21;
             this.btnSignUp.Text = "Đăng ký";
             this.btnSignUp.UseVisualStyleBackColor = false;
@@ -194,9 +192,10 @@ namespace QuanLyBenhVien
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(559, 26);
+            this.pictureBox2.Location = new System.Drawing.Point(479, 21);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(90, 70);
+            this.pictureBox2.Size = new System.Drawing.Size(77, 57);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 22;
             this.pictureBox2.TabStop = false;
@@ -205,9 +204,9 @@ namespace QuanLyBenhVien
             // 
             this.Appearance.BackColor = System.Drawing.Color.White;
             this.Appearance.Options.UseBackColor = true;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(798, 460);
+            this.ClientSize = new System.Drawing.Size(684, 374);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.btnSignUp);
             this.Controls.Add(this.label3);
@@ -219,10 +218,9 @@ namespace QuanLyBenhVien
             this.Controls.Add(this.password);
             this.Controls.Add(this.username);
             this.IconOptions.Image = ((System.Drawing.Image)(resources.GetObject("DangNhap.IconOptions.Image")));
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "DangNhap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Hospital management";
+            this.Text = "Quản lý bệnh viện";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.DangNhap_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Leave += new System.EventHandler(this.DangNhap_Leave);

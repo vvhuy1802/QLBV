@@ -94,15 +94,6 @@
     <Compile Include="DonThuoc.cs">
       <DependentUpon>QLBV.tt</DependentUpon>
     </Compile>
-    <Compile Include="GetLuongCoBan_Result.cs">
-      <DependentUpon>QLBV.tt</DependentUpon>
-    </Compile>
-    <Compile Include="GetSalaryTableAndName_Result.cs">
-      <DependentUpon>QLBV.tt</DependentUpon>
-    </Compile>
-    <Compile Include="GetStaffNSalaryAndTable_Result.cs">
-      <DependentUpon>QLBV.tt</DependentUpon>
-    </Compile>
     <Compile Include="HeThong.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -230,12 +221,6 @@
     <Compile Include="UI\uc_Quanlynhanvien.Designer.cs">
       <DependentUpon>uc_Quanlynhanvien.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\uc_Quanlythongke.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UI\uc_Quanlythongke.Designer.cs">
-      <DependentUpon>uc_Quanlythongke.cs</DependentUpon>
-    </Compile>
     <Compile Include="UI\uc_Thongtincanhan2.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -323,9 +308,6 @@
     <EmbeddedResource Include="UI\uc_Quanlynhanvien.resx">
       <DependentUpon>uc_Quanlynhanvien.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\uc_Quanlythongke.resx">
-      <DependentUpon>uc_Quanlythongke.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="UI\uc_Thongtincanhan2.resx">
       <DependentUpon>uc_Thongtincanhan2.cs</DependentUpon>
     </EmbeddedResource>
@@ -364,16 +346,6 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="QLBV.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>QLBV.edmx</DependentUpon>
-      <LastGenOutput>QLBV.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="QLBV.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>QLBV.edmx</DependentUpon>
-      <LastGenOutput>QLBV.cs</LastGenOutput>
-    </Content>
     <None Include="Resources\hopital11.png" />
     <None Include="Resources\hopital1.png" />
     <None Include="Resources\building_hospital_.png" />
@@ -389,6 +361,18 @@
     <None Include="Resources\309050_add_group_users_business_human_icon %281%29.png" />
     <None Include="Resources\309050_add_group_users_business_human_icon.png" />
     <None Include="Resources\352084_save_guardar_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="QLBV.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>QLBV.edmx</DependentUpon>
+      <LastGenOutput>QLBV.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="QLBV.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>QLBV.edmx</DependentUpon>
+      <LastGenOutput>QLBV.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

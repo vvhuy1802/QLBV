@@ -40,7 +40,6 @@ namespace QuanLyBenhVien
             this.mnQuanlyhethong = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.mnQuanlyletan = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.mnQuanlybacsi = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.mnQuanlythongke = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.mnThongtinquanly = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.mnTennhanvien = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.mnDoimatkhau = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -54,10 +53,9 @@ namespace QuanLyBenhVien
             // mainContainer2
             // 
             this.mainContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.mainContainer2.Location = new System.Drawing.Point(303, 39);
-            this.mainContainer2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.mainContainer2.Location = new System.Drawing.Point(260, 31);
             this.mainContainer2.Name = "mainContainer2";
-            this.mainContainer2.Size = new System.Drawing.Size(995, 760);
+            this.mainContainer2.Size = new System.Drawing.Size(853, 608);
             this.mainContainer2.TabIndex = 0;
             // 
             // accordionControl1
@@ -68,11 +66,10 @@ namespace QuanLyBenhVien
             this.mnQuanlydichvu,
             this.mnQuanlyhethong,
             this.mnThongtinquanly});
-            this.accordionControl1.Location = new System.Drawing.Point(0, 39);
-            this.accordionControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.accordionControl1.Location = new System.Drawing.Point(0, 31);
             this.accordionControl1.Name = "accordionControl1";
             this.accordionControl1.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.Touch;
-            this.accordionControl1.Size = new System.Drawing.Size(303, 760);
+            this.accordionControl1.Size = new System.Drawing.Size(260, 608);
             this.accordionControl1.TabIndex = 1;
             this.accordionControl1.ViewType = DevExpress.XtraBars.Navigation.AccordionControlViewType.HamburgerMenu;
             // 
@@ -81,6 +78,7 @@ namespace QuanLyBenhVien
             this.mnQuanlynhansu.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.mnQuanlynhanvien,
             this.mnQuanlybangluong});
+            this.mnQuanlynhansu.Expanded = true;
             this.mnQuanlynhansu.Name = "mnQuanlynhansu";
             this.mnQuanlynhansu.Text = "Quản lý nhân sự";
             this.mnQuanlynhansu.Click += new System.EventHandler(this.mnQuanlynhansu_Click);
@@ -104,6 +102,7 @@ namespace QuanLyBenhVien
             this.mnQuanlydichvu.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.mnQuanlyloaibenh,
             this.mnQuanlyloaithuoc});
+            this.mnQuanlydichvu.Expanded = true;
             this.mnQuanlydichvu.Name = "mnQuanlydichvu";
             this.mnQuanlydichvu.Text = "Quản lý dịch vụ";
             // 
@@ -125,8 +124,8 @@ namespace QuanLyBenhVien
             // 
             this.mnQuanlyhethong.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.mnQuanlyletan,
-            this.mnQuanlybacsi,
-            this.mnQuanlythongke});
+            this.mnQuanlybacsi});
+            this.mnQuanlyhethong.Expanded = true;
             this.mnQuanlyhethong.Name = "mnQuanlyhethong";
             this.mnQuanlyhethong.Text = "Quản lý hệ thống";
             this.mnQuanlyhethong.Click += new System.EventHandler(this.mnQuanlyhethong_Click);
@@ -144,13 +143,6 @@ namespace QuanLyBenhVien
             this.mnQuanlybacsi.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.mnQuanlybacsi.Text = "Quản lý bác sĩ";
             this.mnQuanlybacsi.Click += new System.EventHandler(this.mnQuanlybacsi_Click);
-            // 
-            // mnQuanlythongke
-            // 
-            this.mnQuanlythongke.Name = "mnQuanlythongke";
-            this.mnQuanlythongke.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.mnQuanlythongke.Text = "Quản lý thống kê";
-            this.mnQuanlythongke.Click += new System.EventHandler(this.mnQuanlythongke_Click);
             // 
             // mnThongtinquanly
             // 
@@ -189,9 +181,8 @@ namespace QuanLyBenhVien
             this.fluentDesignFormControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.lbltieude2});
             this.fluentDesignFormControl1.Location = new System.Drawing.Point(0, 0);
-            this.fluentDesignFormControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.fluentDesignFormControl1.Name = "fluentDesignFormControl1";
-            this.fluentDesignFormControl1.Size = new System.Drawing.Size(1298, 39);
+            this.fluentDesignFormControl1.Size = new System.Drawing.Size(1113, 31);
             this.fluentDesignFormControl1.TabIndex = 2;
             this.fluentDesignFormControl1.TabStop = false;
             this.fluentDesignFormControl1.TitleItemLinks.Add(this.lbltieude2);
@@ -208,15 +199,14 @@ namespace QuanLyBenhVien
             // 
             // QuanLy
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1298, 799);
+            this.ClientSize = new System.Drawing.Size(1113, 639);
             this.ControlContainer = this.mainContainer2;
             this.Controls.Add(this.mainContainer2);
             this.Controls.Add(this.accordionControl1);
             this.Controls.Add(this.fluentDesignFormControl1);
             this.FluentDesignFormControl = this.fluentDesignFormControl1;
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "QuanLy";
@@ -240,7 +230,6 @@ namespace QuanLyBenhVien
         private DevExpress.XtraBars.Navigation.AccordionControlElement mnQuanlyhethong;
         private DevExpress.XtraBars.Navigation.AccordionControlElement mnQuanlyletan;
         private DevExpress.XtraBars.Navigation.AccordionControlElement mnQuanlybacsi;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement mnQuanlythongke;
         private DevExpress.XtraBars.Navigation.AccordionControlElement mnThongtinquanly;
         private DevExpress.XtraBars.Navigation.AccordionControlElement mnTennhanvien;
         private DevExpress.XtraBars.Navigation.AccordionControlElement mnDoimatkhau;

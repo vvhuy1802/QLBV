@@ -18,7 +18,6 @@ namespace QuanLyBenhVien
         uc_Quanlybangluong  ucQuanlybangluong;
         uc_Quanlyloaibenh ucQuanlyloaibenh;
         uc_Quanlyloaithuoc ucQuanlyloaithuoc;
-        uc_Quanlythongke ucQuanlythongke;
         uc_Thongtincanhan2 ucThongtincanhan2;
         uc_Blank ucBlank;
         uc_Doimatkhau2 ucDoimatkhau2;
@@ -103,18 +102,6 @@ namespace QuanLyBenhVien
 
         private void mnQuanlythongke_Click(object sender, EventArgs e)
         {
-            if (ucQuanlythongke == null)
-            {
-                ucQuanlythongke = new uc_Quanlythongke();
-                ucQuanlythongke.Dock = DockStyle.Fill;
-                mainContainer2.Controls.Add(ucQuanlythongke);
-                ucQuanlythongke.BringToFront();
-            }
-            else
-            {
-                ucQuanlythongke.BringToFront();
-            }
-            lbltieude2.Caption = mnQuanlythongke.Text;
         }
 
         private void mnTennhanvien_Click(object sender, EventArgs e)
