@@ -271,5 +271,82 @@
       <End Role="NhanVien" EntitySet="NhanViens" />
       <End Role="Users" EntitySet="Users" />
     </AssociationSet>
+    <FunctionImport Name="AddLuongNhanVien">
+      <Parameter Name="CMND" Mode="In" Type="String" />
+      <Parameter Name="LuongCB" Mode="In" Type="Decimal" />
+      <Parameter Name="HeSo" Mode="In" Type="Double" />
+      <Parameter Name="Trocap" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="AddNhanVien">
+      <Parameter Name="CMND" Mode="In" Type="String" />
+      <Parameter Name="Ten" Mode="In" Type="String" />
+      <Parameter Name="NgaySinh" Mode="In" Type="DateTime" />
+      <Parameter Name="GioiTinh" Mode="In" Type="String" />
+      <Parameter Name="Ex" Mode="In" Type="Int32" />
+      <Parameter Name="DiaChi" Mode="In" Type="String" />
+      <Parameter Name="QuocTich" Mode="In" Type="String" />
+      <Parameter Name="SDT" Mode="In" Type="String" />
+      <Parameter Name="IDchucvu" Mode="In" Type="Int32" />
+      <Parameter Name="Hang" Mode="In" Type="String" />
+      <Parameter Name="Bac" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="DeleteLuongNhanVien">
+      <Parameter Name="CMND" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="DeleteNhanVien">
+      <Parameter Name="CMND" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="EditLuongNhanVien">
+      <Parameter Name="CMND" Mode="In" Type="String" />
+      <Parameter Name="LuongCB" Mode="In" Type="Decimal" />
+      <Parameter Name="HeSo" Mode="In" Type="Double" />
+      <Parameter Name="Trocap" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="EditNhanVien">
+      <Parameter Name="CMND" Mode="In" Type="String" />
+      <Parameter Name="Ten" Mode="In" Type="String" />
+      <Parameter Name="NgaySinh" Mode="In" Type="DateTime" />
+      <Parameter Name="GioiTinh" Mode="In" Type="String" />
+      <Parameter Name="Ex" Mode="In" Type="Int32" />
+      <Parameter Name="DiaChi" Mode="In" Type="String" />
+      <Parameter Name="QuocTich" Mode="In" Type="String" />
+      <Parameter Name="SDT" Mode="In" Type="String" />
+      <Parameter Name="IDchucvu" Mode="In" Type="Int32" />
+      <Parameter Name="Hang" Mode="In" Type="String" />
+      <Parameter Name="Bac" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="GetLuongCoBan" ReturnType="Collection(QuanLyBenhVienModel.GetLuongCoBan_Result)" />
+    <FunctionImport Name="GetSalaryTableAndName" ReturnType="Collection(QuanLyBenhVienModel.GetSalaryTableAndName_Result)" />
+    <FunctionImport Name="GetStaffNSalaryAndTable" ReturnType="Collection(QuanLyBenhVienModel.GetStaffNSalaryAndTable_Result)" />
   </EntityContainer>
+  <ComplexType Name="GetLuongCoBan_Result">
+    <Property Type="String" Name="Ngạch" Nullable="false" MaxLength="10" />
+    <Property Type="Double" Name="Hạng_I" Nullable="true" />
+    <Property Type="Double" Name="Hạng_II" Nullable="true" />
+    <Property Type="Double" Name="Hạng_III" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="GetSalaryTableAndName_Result">
+    <Property Type="String" Name="CMND" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="Ten" Nullable="true" MaxLength="100" />
+    <Property Type="Decimal" Name="LuongCB" Nullable="true" Precision="19" />
+    <Property Type="Double" Name="HeSo" Nullable="true" />
+    <Property Type="Decimal" Name="TroCap" Nullable="true" Precision="19" />
+  </ComplexType>
+  <ComplexType Name="GetStaffNSalaryAndTable_Result">
+    <Property Type="String" Name="CMND" Nullable="false" MaxLength="20" />
+    <Property Type="String" Name="Ten" Nullable="true" MaxLength="100" />
+    <Property Type="Binary" Name="Hinh" Nullable="true" MaxLength="Max" />
+    <Property Type="DateTime" Name="NgaySinh" Nullable="true" Precision="16" />
+    <Property Type="String" Name="GioiTinh" Nullable="true" MaxLength="10" />
+    <Property Type="Int32" Name="Ex" Nullable="true" />
+    <Property Type="String" Name="DiaChi" Nullable="true" MaxLength="200" />
+    <Property Type="String" Name="QuocTich" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="SDT" Nullable="true" MaxLength="20" />
+    <Property Type="Int32" Name="IDchucvu" Nullable="false" />
+    <Property Type="String" Name="Hang" Nullable="true" MaxLength="20" />
+    <Property Type="Int16" Name="Bac" Nullable="true" />
+    <Property Type="Decimal" Name="LuongCB" Nullable="true" Precision="19" />
+    <Property Type="Double" Name="HeSo" Nullable="true" />
+    <Property Type="Decimal" Name="TroCap" Nullable="true" Precision="19" />
+  </ComplexType>
 </Schema>

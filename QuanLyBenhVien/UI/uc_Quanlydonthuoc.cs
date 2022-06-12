@@ -143,5 +143,10 @@ namespace QuanLyBenhVien.UI
             dtgvbenhnhan.Refresh();
             BindingBenh(dtgvbenhnhan);
         }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

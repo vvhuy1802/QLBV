@@ -19,7 +19,7 @@ namespace QuanLyBenhVien
         uc_Quanlyloaibenh ucQuanlyloaibenh;
         uc_Quanlyloaithuoc ucQuanlyloaithuoc;
         uc_Thongtincanhan2 ucThongtincanhan2;
-        uc_Blank ucBlank;
+        uc_Benhvien ucBlank;
         uc_Doimatkhau2 ucDoimatkhau2;
         public QuanLy()
         {
@@ -106,7 +106,7 @@ namespace QuanLyBenhVien
 
         private void mnTennhanvien_Click(object sender, EventArgs e)
         {
-            ucBlank = new uc_Blank();
+            ucBlank = new uc_Benhvien();
             ucBlank.Dock = DockStyle.Fill;
             mainContainer2.Controls.Add(ucBlank);
             ucBlank.BringToFront();
@@ -153,6 +153,15 @@ namespace QuanLyBenhVien
         private void QuanLy_Load(object sender, EventArgs e)
         {
             mnTennhanvien.Text = Cons.Cons.loginnhanvien.Ten;
+            if (ucBlank == null)
+            {
+                ucBlank = new uc_Benhvien();
+                ucBlank.Dock = DockStyle.Fill;
+                mainContainer2.Controls.Add(ucBlank);
+                ucBlank.BringToFront();
+            }
+            else
+                ucBlank.BringToFront();
         }
 
         private void mnQuanlyloaibenh_Click_1(object sender, EventArgs e)

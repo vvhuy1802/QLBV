@@ -20,7 +20,7 @@ namespace QuanLyBenhVien
         uc_BenhNhan ucKhachHang;
         uc_Doimatkhau ucDoimatkhau;
         uc_ThanhToan ucThanhToan;
-        uc_Blank ucBlank;
+        uc_Benhvien ucBlank;
         uc_Thongtincanhan ucThongtincanhan;
         private void accordionControlElement1_Click(object sender, EventArgs e)
         {
@@ -61,7 +61,7 @@ namespace QuanLyBenhVien
 
         private void mnTennhanvien_Click(object sender, EventArgs e)
         {
-            ucBlank = new uc_Blank();
+            ucBlank = new uc_Benhvien();
             ucBlank.Dock = DockStyle.Fill;
             mainContainer.Controls.Add(ucBlank);
             ucBlank.BringToFront();
@@ -121,6 +121,15 @@ namespace QuanLyBenhVien
         private void LeTan_Load(object sender, EventArgs e)
         {
             mnTennhanvien.Text = Cons.Cons.loginnhanvien.Ten;
+            if (ucBlank == null)
+            {
+                ucBlank = new uc_Benhvien();
+                ucBlank.Dock = DockStyle.Fill;
+                mainContainer.Controls.Add(ucBlank);
+                ucBlank.BringToFront();
+            }
+            else
+                ucBlank.BringToFront();
         }
 
         private void fluentDesignFormControl1_Click(object sender, EventArgs e)

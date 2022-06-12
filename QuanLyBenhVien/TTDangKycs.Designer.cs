@@ -438,13 +438,15 @@ namespace QuanLyBenhVien
             // 
             // TTDangKycs
             // 
+            this.Appearance.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(753, 504);
             this.Controls.Add(this.panel1);
             this.Name = "TTDangKycs";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Đăng ký";
+            this.Text = "Thông tin đăng kí";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.TTDangKycs_FormClosed);
             this.Load += new System.EventHandler(this.TTDangKycs_Load);
             this.panel1.ResumeLayout(false);

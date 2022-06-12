@@ -128,5 +128,60 @@ namespace QuanLyBenhVien.UI
             dtgvbenh.Refresh();
             BindingBenh(dtgvbenh);
         }
+
+        private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            txbbenh.Text = txbbenh.Text + cbxbenh.Text + " \n";
+            using (QuanLyBenhVienEntities db = new QuanLyBenhVienEntities())
+            {
+                try
+                {
+                    string id = txbcmnd.Text;
+
+                    var connectionString = @"data source=HUY\SQLEXPRESS;initial catalog=QuanLyBenhVien;integrated security=True";
+                    using (var connection = new SqlConnection(connectionString))
+                    {
+                        var commandText = "select id from LoaiBenh where Ten =N'" + cbxbenh.Text + "'";
+                        var command = new SqlCommand(commandText, connection);
+                        connection.Open();
+                        var count = (int)command.ExecuteScalar();
+
+                        BenhBenhNhan dt = new BenhBenhNhan()
+                        {
+                            IDBenhNhan = id,
+                            IDBenh = count,
+                        };
+                        db.BenhBenhNhans.Add(dt);
+                    }
+                    db.SaveChanges();
+                }
+                catch { }
+            }
+            BindingBenh(dtgvbenh);
+        }
+
+        private void barButtonItem2_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            using (QuanLyBenhVienEntities db = new QuanLyBenhVienEntities())
+            {
+                try
+                {
+                    string id = txbcmnd.Text;
+                    BenhNhan bn = db.BenhNhans.Find(id);
+                    string Benh = txbbenh.Text;
+                    bn.Benh = Benh;
+                    db.SaveChanges();
+                    MessageBox.Show("Chanaged!");
+                    LoadBenh(dtgvbenh);
+                }
+                catch { }
+            }
+            BindingBenh(dtgvbenh);
+        }
+
+        private void barButtonItem3_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            LoadTenBenh(cbxbenh);
+        }
     }
 }

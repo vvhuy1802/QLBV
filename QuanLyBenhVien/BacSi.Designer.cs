@@ -48,10 +48,9 @@ namespace QuanLyBenhVien
             // 
             this.mainContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.mainContainer1.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mainContainer1.Location = new System.Drawing.Point(303, 39);
-            this.mainContainer1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.mainContainer1.Location = new System.Drawing.Point(260, 31);
             this.mainContainer1.Name = "mainContainer1";
-            this.mainContainer1.Size = new System.Drawing.Size(995, 760);
+            this.mainContainer1.Size = new System.Drawing.Size(853, 608);
             this.mainContainer1.TabIndex = 0;
             // 
             // accordionControl1
@@ -60,11 +59,10 @@ namespace QuanLyBenhVien
             this.accordionControl1.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.mnThongtinkhambenh,
             this.mnThongtincanhan});
-            this.accordionControl1.Location = new System.Drawing.Point(0, 39);
-            this.accordionControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.accordionControl1.Location = new System.Drawing.Point(0, 31);
             this.accordionControl1.Name = "accordionControl1";
             this.accordionControl1.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.Touch;
-            this.accordionControl1.Size = new System.Drawing.Size(303, 760);
+            this.accordionControl1.Size = new System.Drawing.Size(260, 608);
             this.accordionControl1.TabIndex = 1;
             this.accordionControl1.ViewType = DevExpress.XtraBars.Navigation.AccordionControlViewType.HamburgerMenu;
             // 
@@ -128,16 +126,15 @@ namespace QuanLyBenhVien
             this.fluentDesignFormControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.lblTieude1});
             this.fluentDesignFormControl1.Location = new System.Drawing.Point(0, 0);
-            this.fluentDesignFormControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.fluentDesignFormControl1.Name = "fluentDesignFormControl1";
-            this.fluentDesignFormControl1.Size = new System.Drawing.Size(1298, 39);
+            this.fluentDesignFormControl1.Size = new System.Drawing.Size(1113, 31);
             this.fluentDesignFormControl1.TabIndex = 2;
             this.fluentDesignFormControl1.TabStop = false;
             this.fluentDesignFormControl1.TitleItemLinks.Add(this.lblTieude1);
             // 
             // lblTieude1
             // 
-            this.lblTieude1.Caption = "Demo Bác sĩ";
+            this.lblTieude1.Caption = "Bác sĩ";
             this.lblTieude1.Id = 0;
             this.lblTieude1.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTieude1.ItemAppearance.Normal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
@@ -147,15 +144,14 @@ namespace QuanLyBenhVien
             // 
             // BacSi
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1298, 799);
+            this.ClientSize = new System.Drawing.Size(1113, 639);
             this.ControlContainer = this.mainContainer1;
             this.Controls.Add(this.mainContainer1);
             this.Controls.Add(this.accordionControl1);
             this.Controls.Add(this.fluentDesignFormControl1);
             this.FluentDesignFormControl = this.fluentDesignFormControl1;
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "BacSi";

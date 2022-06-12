@@ -106,8 +106,7 @@ namespace QuanLyBenhVien.UI
             this.bar1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.barButtonItem1, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
             new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.barButtonItem2, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
-            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.barButtonItem3, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
-            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.barButtonItem4, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph)});
+            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.barButtonItem3, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph)});
             this.bar1.Text = "Tools";
             // 
             // barButtonItem1
@@ -140,6 +139,7 @@ namespace QuanLyBenhVien.UI
             this.barButtonItem4.Id = 3;
             this.barButtonItem4.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem4.ImageOptions.SvgImage")));
             this.barButtonItem4.Name = "barButtonItem4";
+            this.barButtonItem4.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem4_ItemClick);
             // 
             // barDockControlTop
             // 
@@ -175,6 +175,7 @@ namespace QuanLyBenhVien.UI
             // 
             // dataGridView1
             // 
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
@@ -276,225 +277,240 @@ namespace QuanLyBenhVien.UI
             // 
             // txbtimkiem
             // 
-            this.txbtimkiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbtimkiem.Location = new System.Drawing.Point(124, 46);
-            this.txbtimkiem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txbtimkiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbtimkiem.Location = new System.Drawing.Point(164, 44);
+            this.txbtimkiem.Margin = new System.Windows.Forms.Padding(2);
             this.txbtimkiem.Name = "txbtimkiem";
-            this.txbtimkiem.Size = new System.Drawing.Size(343, 22);
+            this.txbtimkiem.Size = new System.Drawing.Size(343, 24);
             this.txbtimkiem.TabIndex = 66;
             this.txbtimkiem.TextChanged += new System.EventHandler(this.txbtimkiem_TextChanged);
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(150)))), ((int)(((byte)(190)))));
+            this.button1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.Control;
             this.button1.Location = new System.Drawing.Point(18, 41);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(82, 27);
+            this.button1.Size = new System.Drawing.Size(141, 27);
             this.button1.TabIndex = 67;
             this.button1.Text = "Tìm kiếm";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // txtDiaChi
             // 
+            this.txtDiaChi.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDiaChi.Location = new System.Drawing.Point(539, 428);
             this.txtDiaChi.Name = "txtDiaChi";
-            this.txtDiaChi.Size = new System.Drawing.Size(125, 20);
+            this.txtDiaChi.Size = new System.Drawing.Size(125, 25);
             this.txtDiaChi.TabIndex = 132;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(416, 426);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(65, 18);
+            this.label11.Size = new System.Drawing.Size(60, 17);
             this.label11.TabIndex = 131;
             this.label11.Text = "Địa Chỉ:";
             // 
             // txtCMNDBS
             // 
+            this.txtCMNDBS.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCMNDBS.Location = new System.Drawing.Point(539, 386);
             this.txtCMNDBS.Name = "txtCMNDBS";
-            this.txtCMNDBS.Size = new System.Drawing.Size(125, 20);
+            this.txtCMNDBS.Size = new System.Drawing.Size(125, 25);
             this.txtCMNDBS.TabIndex = 130;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(416, 384);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(82, 18);
+            this.label10.Size = new System.Drawing.Size(75, 17);
             this.label10.TabIndex = 129;
             this.label10.Text = "CMNDBS:";
             // 
             // dtpNhapvien
             // 
+            this.dtpNhapvien.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpNhapvien.Location = new System.Drawing.Point(124, 565);
             this.dtpNhapvien.Name = "dtpNhapvien";
-            this.dtpNhapvien.Size = new System.Drawing.Size(203, 20);
+            this.dtpNhapvien.Size = new System.Drawing.Size(203, 25);
             this.dtpNhapvien.TabIndex = 125;
             // 
             // cbxBaohiem
             // 
+            this.cbxBaohiem.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxBaohiem.FormattingEnabled = true;
             this.cbxBaohiem.Items.AddRange(new object[] {
             "0",
             "1"});
             this.cbxBaohiem.Location = new System.Drawing.Point(539, 563);
             this.cbxBaohiem.Name = "cbxBaohiem";
-            this.cbxBaohiem.Size = new System.Drawing.Size(125, 21);
+            this.cbxBaohiem.Size = new System.Drawing.Size(125, 28);
             this.cbxBaohiem.TabIndex = 124;
             // 
             // cbxGioitinh
             // 
+            this.cbxGioitinh.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxGioitinh.FormattingEnabled = true;
             this.cbxGioitinh.Items.AddRange(new object[] {
             "Nam",
             "Nữ"});
             this.cbxGioitinh.Location = new System.Drawing.Point(124, 518);
             this.cbxGioitinh.Name = "cbxGioitinh";
-            this.cbxGioitinh.Size = new System.Drawing.Size(89, 21);
+            this.cbxGioitinh.Size = new System.Drawing.Size(89, 28);
             this.cbxGioitinh.TabIndex = 123;
             // 
             // dtpNgaysinh
             // 
+            this.dtpNgaysinh.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpNgaysinh.Location = new System.Drawing.Point(124, 474);
             this.dtpNgaysinh.Name = "dtpNgaysinh";
-            this.dtpNgaysinh.Size = new System.Drawing.Size(203, 20);
+            this.dtpNgaysinh.Size = new System.Drawing.Size(203, 25);
             this.dtpNgaysinh.TabIndex = 122;
             // 
             // txtQuoctich
             // 
+            this.txtQuoctich.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtQuoctich.Location = new System.Drawing.Point(539, 521);
             this.txtQuoctich.Name = "txtQuoctich";
-            this.txtQuoctich.Size = new System.Drawing.Size(125, 20);
+            this.txtQuoctich.Size = new System.Drawing.Size(125, 25);
             this.txtQuoctich.TabIndex = 121;
             // 
             // txtSDT
             // 
+            this.txtSDT.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSDT.Location = new System.Drawing.Point(539, 475);
             this.txtSDT.Name = "txtSDT";
-            this.txtSDT.Size = new System.Drawing.Size(125, 20);
+            this.txtSDT.Size = new System.Drawing.Size(125, 25);
             this.txtSDT.TabIndex = 120;
             // 
             // txtTen
             // 
+            this.txtTen.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtTen.Location = new System.Drawing.Point(124, 426);
             this.txtTen.Name = "txtTen";
-            this.txtTen.Size = new System.Drawing.Size(160, 20);
+            this.txtTen.Size = new System.Drawing.Size(160, 25);
             this.txtTen.TabIndex = 119;
             // 
             // txtCMND
             // 
+            this.txtCMND.Font = new System.Drawing.Font("Arial Narrow", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCMND.Location = new System.Drawing.Point(124, 384);
             this.txtCMND.Name = "txtCMND";
-            this.txtCMND.Size = new System.Drawing.Size(114, 20);
+            this.txtCMND.Size = new System.Drawing.Size(114, 25);
             this.txtCMND.TabIndex = 118;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(15, 564);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(81, 18);
+            this.label9.Size = new System.Drawing.Size(74, 17);
             this.label9.TabIndex = 117;
             this.label9.Text = "Ngày Vào:";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(418, 518);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(82, 18);
+            this.label8.Size = new System.Drawing.Size(80, 17);
             this.label8.TabIndex = 116;
             this.label8.Text = "Quốc Tịch:";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(422, 564);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(82, 18);
+            this.label7.Size = new System.Drawing.Size(76, 17);
             this.label7.TabIndex = 115;
             this.label7.Text = "Bảo Hiểm:";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(416, 473);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(112, 18);
+            this.label6.Size = new System.Drawing.Size(104, 17);
             this.label6.TabIndex = 114;
             this.label6.Text = "Số Điện Thoại:";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(15, 515);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(75, 18);
+            this.label5.Size = new System.Drawing.Size(71, 17);
             this.label5.TabIndex = 113;
             this.label5.Text = "Giới Tính:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(15, 473);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(83, 18);
+            this.label4.Size = new System.Drawing.Size(78, 17);
             this.label4.TabIndex = 112;
             this.label4.Text = "Ngày Sinh:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(15, 423);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(38, 18);
+            this.label2.Size = new System.Drawing.Size(37, 17);
             this.label2.TabIndex = 111;
             this.label2.Text = "Tên:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(15, 381);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(60, 18);
+            this.label1.Size = new System.Drawing.Size(55, 17);
             this.label1.TabIndex = 110;
             this.label1.Text = "CMND:";
             // 
             // button4
             // 
-            this.button4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(150)))), ((int)(((byte)(190)))));
+            this.button4.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ForeColor = System.Drawing.SystemColors.Control;
             this.button4.Image = global::QuanLyBenhVien.Properties.Resources._7030152_ui_basic_write_pen_pencil_edit_icon__1_;
             this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(749, 462);
+            this.button4.Location = new System.Drawing.Point(736, 462);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(99, 40);
+            this.button4.Size = new System.Drawing.Size(112, 40);
             this.button4.TabIndex = 128;
             this.button4.Text = "Sửa";
-            this.button4.UseVisualStyleBackColor = true;
+            this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
-            this.button3.BackColor = System.Drawing.Color.White;
-            this.button3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(150)))), ((int)(((byte)(190)))));
+            this.button3.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.SystemColors.Control;
             this.button3.Image = global::QuanLyBenhVien.Properties.Resources._4781812_bin_delete_file_garbage_recycle_icon__1_;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(749, 543);
+            this.button3.Location = new System.Drawing.Point(736, 543);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(101, 40);
+            this.button3.Size = new System.Drawing.Size(114, 40);
             this.button3.TabIndex = 127;
             this.button3.Text = "Xóa";
             this.button3.UseVisualStyleBackColor = false;
@@ -502,13 +518,14 @@ namespace QuanLyBenhVien.UI
             // 
             // button2
             // 
-            this.button2.BackColor = System.Drawing.Color.White;
-            this.button2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(150)))), ((int)(((byte)(190)))));
+            this.button2.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.SystemColors.Control;
             this.button2.Image = global::QuanLyBenhVien.Properties.Resources._309049_add_user_human_person_plus_icon;
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(749, 384);
+            this.button2.Location = new System.Drawing.Point(736, 384);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(99, 40);
+            this.button2.Size = new System.Drawing.Size(112, 40);
             this.button2.TabIndex = 126;
             this.button2.Text = "Thêm";
             this.button2.UseVisualStyleBackColor = false;

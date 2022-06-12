@@ -94,6 +94,15 @@
     <Compile Include="DonThuoc.cs">
       <DependentUpon>QLBV.tt</DependentUpon>
     </Compile>
+    <Compile Include="GetLuongCoBan_Result.cs">
+      <DependentUpon>QLBV.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetSalaryTableAndName_Result.cs">
+      <DependentUpon>QLBV.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetStaffNSalaryAndTable_Result.cs">
+      <DependentUpon>QLBV.tt</DependentUpon>
+    </Compile>
     <Compile Include="HeThong.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -155,11 +164,11 @@
     <Compile Include="TTDangKycs.Designer.cs">
       <DependentUpon>TTDangKycs.cs</DependentUpon>
     </Compile>
-    <Compile Include="UI\uc_Blank.cs">
+    <Compile Include="UI\uc_Benhvien.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UI\uc_Blank.Designer.cs">
-      <DependentUpon>uc_Blank.cs</DependentUpon>
+    <Compile Include="UI\uc_Benhvien.Designer.cs">
+      <DependentUpon>uc_Benhvien.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\uc_Doimatkhau.cs">
       <SubType>UserControl</SubType>
@@ -275,8 +284,8 @@
     <EmbeddedResource Include="TTDangKycs.resx">
       <DependentUpon>TTDangKycs.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\uc_Blank.resx">
-      <DependentUpon>uc_Blank.cs</DependentUpon>
+    <EmbeddedResource Include="UI\uc_Benhvien.resx">
+      <DependentUpon>uc_Benhvien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\uc_Doimatkhau.resx">
       <DependentUpon>uc_Doimatkhau.cs</DependentUpon>
@@ -373,6 +382,7 @@
       <DependentUpon>QLBV.edmx</DependentUpon>
       <LastGenOutput>QLBV.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\benhvien1.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.

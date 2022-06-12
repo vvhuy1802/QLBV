@@ -295,5 +295,10 @@ namespace QuanLyBenhVien.UI
             }
             BindingBenhnhan(dataGridView1);
         }
+
+        private void barButtonItem4_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+
+        }
     }
 }

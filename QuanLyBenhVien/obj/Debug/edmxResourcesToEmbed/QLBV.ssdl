@@ -211,6 +211,53 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Function Name="AddLuongNhanVien" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CMND" Type="nvarchar" Mode="In" />
+    <Parameter Name="LuongCB" Type="money" Mode="In" />
+    <Parameter Name="HeSo" Type="float" Mode="In" />
+    <Parameter Name="Trocap" Type="money" Mode="In" />
+  </Function>
+  <Function Name="AddNhanVien" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CMND" Type="nvarchar" Mode="In" />
+    <Parameter Name="Ten" Type="nvarchar" Mode="In" />
+    <Parameter Name="NgaySinh" Type="smalldatetime" Mode="In" />
+    <Parameter Name="GioiTinh" Type="nvarchar" Mode="In" />
+    <Parameter Name="Ex" Type="int" Mode="In" />
+    <Parameter Name="DiaChi" Type="nvarchar" Mode="In" />
+    <Parameter Name="QuocTich" Type="nvarchar" Mode="In" />
+    <Parameter Name="SDT" Type="nvarchar" Mode="In" />
+    <Parameter Name="IDchucvu" Type="int" Mode="In" />
+    <Parameter Name="Hang" Type="nvarchar" Mode="In" />
+    <Parameter Name="Bac" Type="int" Mode="In" />
+  </Function>
+  <Function Name="DeleteLuongNhanVien" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CMND" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="DeleteNhanVien" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CMND" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="EditLuongNhanVien" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CMND" Type="nvarchar" Mode="In" />
+    <Parameter Name="LuongCB" Type="money" Mode="In" />
+    <Parameter Name="HeSo" Type="float" Mode="In" />
+    <Parameter Name="Trocap" Type="money" Mode="In" />
+  </Function>
+  <Function Name="EditNhanVien" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="CMND" Type="nvarchar" Mode="In" />
+    <Parameter Name="Ten" Type="nvarchar" Mode="In" />
+    <Parameter Name="NgaySinh" Type="smalldatetime" Mode="In" />
+    <Parameter Name="GioiTinh" Type="nvarchar" Mode="In" />
+    <Parameter Name="Ex" Type="int" Mode="In" />
+    <Parameter Name="DiaChi" Type="nvarchar" Mode="In" />
+    <Parameter Name="QuocTich" Type="nvarchar" Mode="In" />
+    <Parameter Name="SDT" Type="nvarchar" Mode="In" />
+    <Parameter Name="IDchucvu" Type="int" Mode="In" />
+    <Parameter Name="Hang" Type="nvarchar" Mode="In" />
+    <Parameter Name="Bac" Type="int" Mode="In" />
+  </Function>
+  <Function Name="GetLuongCoBan" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="GetSalaryTableAndName" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="GetStaffNSalaryAndTable" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
   <EntityContainer Name="QuanLyBenhVienModelStoreContainer">
     <EntitySet Name="BangLuong" EntityType="Self.BangLuong" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="BenhBenhNhan" EntityType="Self.BenhBenhNhan" Schema="dbo" store:Type="Tables" />
