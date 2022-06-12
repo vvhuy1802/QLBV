@@ -138,5 +138,76 @@ namespace QuanLyBenhVien.UI
             dtgvthuoc.Refresh();
             BindingThuoc(dtgvthuoc);
         }
+
+        private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            using (QuanLyBenhVienEntities db = new QuanLyBenhVienEntities())
+            {
+                try
+                {
+                    int id = int.Parse(txbid.Text);
+                    string ten = txbten.Text;
+                    if (db.LoaiThuocs.Select(m => m.ID).Contains(id))
+                    {
+                        MessageBox.Show("This ID was in database!");
+                        return;
+                    }
+                    string tendv = txbten.Text;
+                    decimal giadv = decimal.Parse(txbgia.Text);
+
+                    LoaiThuoc p = new LoaiThuoc()
+                    {
+                        ID = id,
+                        Ten = tendv,
+                        Gia = giadv
+                    };
+                    db.LoaiThuocs.Add(p);
+                    db.SaveChanges();
+                    MessageBox.Show("Added Successfully!");
+                    LoadThuoc(dtgvthuoc);
+                }
+                catch { MessageBox.Show("Please fill in information!"); }
+            }
+            BindingThuoc(dtgvthuoc);
+        }
+
+        private void barButtonItem2_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            using (QuanLyBenhVienEntities db = new QuanLyBenhVienEntities())
+            {
+                try
+                {
+                    int id = int.Parse(txbid.Text);
+                    db.LoaiThuocs.Remove(db.LoaiThuocs.Find(id));
+                    db.SaveChanges();
+                    MessageBox.Show("Removed!");
+                    LoadThuoc(dtgvthuoc);
+                }
+                catch { }
+            }
+            BindingThuoc(dtgvthuoc);
+        }
+
+        private void barButtonItem3_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            using (QuanLyBenhVienEntities db = new QuanLyBenhVienEntities())
+            {
+                try
+                {
+                    int id = int.Parse(txbid.Text);
+                    LoaiThuoc dv = db.LoaiThuocs.Find(id);
+                    string tendv = txbten.Text;
+                    decimal giadv = decimal.Parse(txbgia.Text);
+                    dv.ID = id;
+                    dv.Ten = tendv;
+                    dv.Gia = giadv;
+                    db.SaveChanges();
+                    MessageBox.Show("Chanaged!");
+                    LoadThuoc(dtgvthuoc);
+                }
+                catch { }
+            }
+            BindingThuoc(dtgvthuoc);
+        }
     }
 }

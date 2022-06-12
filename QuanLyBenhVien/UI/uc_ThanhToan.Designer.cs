@@ -64,13 +64,13 @@ namespace QuanLyBenhVien.UI
             this.label10 = new System.Windows.Forms.Label();
             this.txbKhachDua = new System.Windows.Forms.TextBox();
             this.barManager1 = new DevExpress.XtraBars.BarManager(this.components);
+            this.bar1 = new DevExpress.XtraBars.Bar();
+            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             this.barDockControlTop = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlBottom = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlLeft = new DevExpress.XtraBars.BarDockControl();
             this.barDockControlRight = new DevExpress.XtraBars.BarDockControl();
-            this.bar1 = new DevExpress.XtraBars.Bar();
-            this.barButtonItem1 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem2 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem3 = new DevExpress.XtraBars.BarButtonItem();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -111,9 +111,9 @@ namespace QuanLyBenhVien.UI
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(31, 161);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(53, 18);
+            this.label11.Size = new System.Drawing.Size(57, 18);
             this.label11.TabIndex = 151;
-            this.label11.Text = "Địa chỉ";
+            this.label11.Text = "Địa chỉ:";
             // 
             // dtpNhapvien
             // 
@@ -192,9 +192,9 @@ namespace QuanLyBenhVien.UI
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.Location = new System.Drawing.Point(28, 340);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(108, 18);
+            this.label9.Size = new System.Drawing.Size(112, 18);
             this.label9.TabIndex = 140;
-            this.label9.Text = "Ngày nhập viện";
+            this.label9.Text = "Ngày nhập viện:";
             // 
             // label8
             // 
@@ -202,9 +202,9 @@ namespace QuanLyBenhVien.UI
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(31, 252);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(72, 18);
+            this.label8.Size = new System.Drawing.Size(76, 18);
             this.label8.TabIndex = 139;
-            this.label8.Text = "Quốc tịch";
+            this.label8.Text = "Quốc tịch:";
             // 
             // label7
             // 
@@ -212,9 +212,9 @@ namespace QuanLyBenhVien.UI
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(31, 301);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(71, 18);
+            this.label7.Size = new System.Drawing.Size(75, 18);
             this.label7.TabIndex = 138;
-            this.label7.Text = "Bảo hiểm";
+            this.label7.Text = "Bảo hiểm:";
             // 
             // label6
             // 
@@ -222,9 +222,9 @@ namespace QuanLyBenhVien.UI
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(31, 206);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(94, 18);
+            this.label6.Size = new System.Drawing.Size(98, 18);
             this.label6.TabIndex = 137;
-            this.label6.Text = "Số điện thoại";
+            this.label6.Text = "Số điện thoại:";
             // 
             // label5
             // 
@@ -232,9 +232,9 @@ namespace QuanLyBenhVien.UI
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(31, 120);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(62, 18);
+            this.label5.Size = new System.Drawing.Size(66, 18);
             this.label5.TabIndex = 136;
-            this.label5.Text = "Giới tính";
+            this.label5.Text = "Giới tính:";
             // 
             // label4
             // 
@@ -242,9 +242,9 @@ namespace QuanLyBenhVien.UI
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(31, 76);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(73, 18);
+            this.label4.Size = new System.Drawing.Size(77, 18);
             this.label4.TabIndex = 135;
-            this.label4.Text = "Ngày sinh";
+            this.label4.Text = "Ngày sinh:";
             // 
             // label2
             // 
@@ -252,9 +252,9 @@ namespace QuanLyBenhVien.UI
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(31, 36);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(33, 18);
+            this.label2.Size = new System.Drawing.Size(37, 18);
             this.label2.TabIndex = 134;
-            this.label2.Text = "Tên";
+            this.label2.Text = "Tên:";
             // 
             // btn_show
             // 
@@ -302,9 +302,9 @@ namespace QuanLyBenhVien.UI
             this.groupBox1.Controls.Add(this.txbSDT);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(29, 108);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox1.Size = new System.Drawing.Size(390, 374);
             this.groupBox1.TabIndex = 168;
             this.groupBox1.TabStop = false;
@@ -324,9 +324,9 @@ namespace QuanLyBenhVien.UI
             this.groupBox2.Controls.Add(this.txbKhachDua);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(470, 108);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox2.Size = new System.Drawing.Size(392, 374);
             this.groupBox2.TabIndex = 169;
             this.groupBox2.TabStop = false;
@@ -338,9 +338,9 @@ namespace QuanLyBenhVien.UI
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.Location = new System.Drawing.Point(35, 49);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(136, 18);
+            this.label12.Size = new System.Drawing.Size(140, 18);
             this.label12.TabIndex = 165;
-            this.label12.Text = "Chi Phí Khám Bệnh";
+            this.label12.Text = "Chi Phí Khám Bệnh:";
             // 
             // txbCPKhamBenh
             // 
@@ -370,9 +370,9 @@ namespace QuanLyBenhVien.UI
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label13.Location = new System.Drawing.Point(38, 106);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(133, 18);
+            this.label13.Size = new System.Drawing.Size(137, 18);
             this.label13.TabIndex = 167;
-            this.label13.Text = "Chi Phí Đơn Thuốc";
+            this.label13.Text = "Chi Phí Đơn Thuốc:";
             // 
             // label14
             // 
@@ -380,9 +380,9 @@ namespace QuanLyBenhVien.UI
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label14.Location = new System.Drawing.Point(44, 294);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(73, 18);
+            this.label14.Size = new System.Drawing.Size(77, 18);
             this.label14.TabIndex = 173;
-            this.label14.Text = "Tiền Thừa";
+            this.label14.Text = "Tiền Thừa:";
             // 
             // txbtong
             // 
@@ -412,9 +412,9 @@ namespace QuanLyBenhVien.UI
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(40, 167);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(125, 18);
+            this.label3.Size = new System.Drawing.Size(129, 18);
             this.label3.TabIndex = 169;
-            this.label3.Text = "Tổng Thanh Toán";
+            this.label3.Text = "Tổng Thanh Toán:";
             // 
             // label10
             // 
@@ -422,9 +422,9 @@ namespace QuanLyBenhVien.UI
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(40, 234);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(81, 18);
+            this.label10.Size = new System.Drawing.Size(85, 18);
             this.label10.TabIndex = 171;
-            this.label10.Text = "Khách Đưa";
+            this.label10.Text = "Khách Đưa:";
             // 
             // txbKhachDua
             // 
@@ -451,6 +451,35 @@ namespace QuanLyBenhVien.UI
             this.barButtonItem2,
             this.barButtonItem3});
             this.barManager1.MaxItemId = 3;
+            // 
+            // bar1
+            // 
+            this.bar1.BarName = "Tools";
+            this.bar1.DockCol = 0;
+            this.bar1.DockRow = 0;
+            this.bar1.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
+            this.bar1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
+            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.barButtonItem1, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
+            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.barButtonItem2, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph)});
+            this.bar1.Text = "Tools";
+            // 
+            // barButtonItem1
+            // 
+            this.barButtonItem1.Caption = "Hiển thị";
+            this.barButtonItem1.Id = 0;
+            this.barButtonItem1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
+            this.barButtonItem1.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
+            this.barButtonItem1.Name = "barButtonItem1";
+            this.barButtonItem1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1_ItemClick);
+            // 
+            // barButtonItem2
+            // 
+            this.barButtonItem2.Caption = "Thanh toán";
+            this.barButtonItem2.Id = 1;
+            this.barButtonItem2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.Image")));
+            this.barButtonItem2.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.LargeImage")));
+            this.barButtonItem2.Name = "barButtonItem2";
+            this.barButtonItem2.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem2_ItemClick);
             // 
             // barDockControlTop
             // 
@@ -483,34 +512,6 @@ namespace QuanLyBenhVien.UI
             this.barDockControlRight.Location = new System.Drawing.Point(885, 24);
             this.barDockControlRight.Manager = this.barManager1;
             this.barDockControlRight.Size = new System.Drawing.Size(0, 626);
-            // 
-            // bar1
-            // 
-            this.bar1.BarName = "Tools";
-            this.bar1.DockCol = 0;
-            this.bar1.DockStyle = DevExpress.XtraBars.BarDockStyle.Top;
-            this.bar1.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
-            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.barButtonItem1, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph),
-            new DevExpress.XtraBars.LinkPersistInfo(DevExpress.XtraBars.BarLinkUserDefines.PaintStyle, this.barButtonItem2, DevExpress.XtraBars.BarItemPaintStyle.CaptionGlyph)});
-            this.bar1.Text = "Tools";
-            // 
-            // barButtonItem1
-            // 
-            this.barButtonItem1.Caption = "Hiển thị";
-            this.barButtonItem1.Id = 0;
-            this.barButtonItem1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.Image")));
-            this.barButtonItem1.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem1.ImageOptions.LargeImage")));
-            this.barButtonItem1.Name = "barButtonItem1";
-            this.barButtonItem1.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem1_ItemClick);
-            // 
-            // barButtonItem2
-            // 
-            this.barButtonItem2.Caption = "Thanh toán";
-            this.barButtonItem2.Id = 1;
-            this.barButtonItem2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.Image")));
-            this.barButtonItem2.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barButtonItem2.ImageOptions.LargeImage")));
-            this.barButtonItem2.Name = "barButtonItem2";
-            this.barButtonItem2.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem2_ItemClick);
             // 
             // barButtonItem3
             // 

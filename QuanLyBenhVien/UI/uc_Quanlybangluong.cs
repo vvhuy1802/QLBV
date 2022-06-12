@@ -106,5 +106,41 @@ namespace QuanLyBenhVien.UI
         {
 
         }
+
+        private void btnSearchStaff_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            try
+            {
+                if (txbCMND.Text.ToString() != "")
+                {
+                    double calculateSalary = double.Parse(txbRate.Text.ToString()) * double.Parse(txbSalary.Text.ToString()) + double.Parse(txbSupportMoney.Text.ToString());
+                    txbCalculateSalary.Text = calculateSalary.ToString();
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Vui lòng nhập đầy đủ thông tin cần thiết.", "Thông báo", MessageBoxButtons.OK);
+            }
+        }
+
+        private void barButtonItem2_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            entities.EditLuongNhanVien(txbCMND.Text.ToString(), decimal.Parse(txbSalary.Text), double.Parse(txbRate.Text), decimal.Parse(txbSupportMoney.Text));
+            try
+            {
+                MessageBox.Show("Cập nhật thành công.", "Thông báo", MessageBoxButtons.OK);
+
+            }
+            catch
+            {
+                MessageBox.Show("Lỗi không thể cập nhật nhân viên.", "Thông báo", MessageBoxButtons.OK);
+            }
+            ShowSalaryTable();
+        }
     }
 }

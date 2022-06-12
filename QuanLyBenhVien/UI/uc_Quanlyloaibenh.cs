@@ -139,5 +139,76 @@ namespace QuanLyBenhVien.UI
             dtgvbenh.Refresh();
             BindingBenh(dtgvbenh);
         }
+
+        private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            using (QuanLyBenhVienEntities db = new QuanLyBenhVienEntities())
+            {
+                try
+                {
+                    int id = int.Parse(txbidbenh.Text);
+                    string ten = txbten.Text;
+                    if (db.LoaiBenhs.Select(m => m.ID).Contains(id))
+                    {
+                        MessageBox.Show("This ID was in database!");
+                        return;
+                    }
+                    string tendv = txbten.Text;
+                    decimal giadv = decimal.Parse(txbgia.Text);
+
+                    LoaiBenh p = new LoaiBenh()
+                    {
+                        ID = id,
+                        Ten = tendv,
+                        Gia = giadv
+                    };
+                    db.LoaiBenhs.Add(p);
+                    db.SaveChanges();
+                    MessageBox.Show("Added Successfully!");
+                    LoadBenh(dtgvbenh);
+                }
+                catch { MessageBox.Show("Please fill in information!"); }
+            }
+            BindingBenh(dtgvbenh);
+        }
+
+        private void barButtonItem2_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            using (QuanLyBenhVienEntities db = new QuanLyBenhVienEntities())
+            {
+                try
+                {
+                    int id = int.Parse(txbidbenh.Text);
+                    db.LoaiBenhs.Remove(db.LoaiBenhs.Find(id));
+                    db.SaveChanges();
+                    MessageBox.Show("Removed!");
+                    LoadBenh(dtgvbenh);
+                }
+                catch { }
+            }
+            BindingBenh(dtgvbenh);
+        }
+
+        private void barButtonItem3_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            using (QuanLyBenhVienEntities db = new QuanLyBenhVienEntities())
+            {
+                try
+                {
+                    int id = int.Parse(txbidbenh.Text);
+                    LoaiBenh dv = db.LoaiBenhs.Find(id);
+                    string tendv = txbten.Text;
+                    decimal giadv = decimal.Parse(txbgia.Text);
+                    dv.ID = id;
+                    dv.Ten = tendv;
+                    dv.Gia = giadv;
+                    db.SaveChanges();
+                    MessageBox.Show("Chanaged!");
+                    LoadBenh(dtgvbenh);
+                }
+                catch { }
+            }
+            BindingBenh(dtgvbenh);
+        }
     }
 }

@@ -272,5 +272,90 @@ namespace QuanLyBenhVien.UI
         {
 
         }
+
+        private void barButtonItem1_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            int idChucVu = cbStaffPosition.SelectedIndex + 1;
+            btnSave.Visible = false;
+            btnAddStaff.Visible = true;
+            btnStaffCancel.Enabled = false;
+            entities1.AddNhanVien(txbStaffCMND.Text.ToString(), txbStaffName.Text.ToString(), dtpStaffBirth.Value, cbStaffSex.Text, int.Parse(nudStaffExp.Value.ToString()), txbStaffLocate.Text.ToString(), txbStaffCountry.Text.ToString(), txbStaffNum.Text.ToString(), idChucVu, cbStaffRank.Text, int.Parse(nupStaffLevel.Value.ToString()));
+
+            entities1.AddLuongNhanVien(txbStaffCMND.Text.ToString(), decimal.Parse(txbStaffSalary.Text), double.Parse(txbStaffRate.Text), decimal.Parse(txbStaffSupportMoney.Text));
+            try
+            {
+                MessageBox.Show("Thêm nhân viên mới thành công!", "Thông báo", MessageBoxButtons.OK);
+                ShowStaffTable(dgvStaffList);
+
+            }
+            catch
+            {
+                MessageBox.Show("Thêm nhân viên mới không thành công!", "Thông báo", MessageBoxButtons.OK);
+            }
+            unlockButton();
+        }
+
+        private void barButtonItem3_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            entities1.DeleteLuongNhanVien(txbStaffCMND.Text.ToString());
+            entities1.DeleteNhanVien(txbStaffCMND.Text.ToString());
+            try
+            {
+                MessageBox.Show("Xoá nhân viên thành công.", "Thông báo", MessageBoxButtons.OK);
+            }
+            catch
+            {
+                MessageBox.Show("Lỗi không thể xóa nhân viên!!!", "Thông báo", MessageBoxButtons.OK);
+            }
+            ShowStaffTable(dgvStaffList);
+        }
+
+        private void barButtonItem6_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            btnSave.Visible = true;
+            btnAddStaff.Visible = false;
+            btnStaffCancel.Enabled = true;
+            lockButton();
+        }
+
+        private void barButtonItem4_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            if (txbStaffCMND.Text.ToString() == "")
+            {
+                MessageBox.Show("Vui lòng chọn nhân viên muốn thay đổi!", "Thông báo", MessageBoxButtons.OK);
+            }
+
+            int idChucVu = cbStaffPosition.SelectedIndex + 1;
+            if (idChucVu == 2)
+            {
+                entities1.EditNhanVien(txbStaffCMND.Text.ToString(), txbStaffName.Text.ToString(), dtpStaffBirth.Value, cbStaffSex.Text, int.Parse(nudStaffExp.Value.ToString()), txbStaffLocate.Text.ToString(), txbStaffCountry.Text.ToString(), txbStaffNum.Text.ToString(), idChucVu, cbStaffRank.Text, int.Parse(nupStaffLevel.Value.ToString()));
+            }
+            else
+            {
+                entities1.EditNhanVien(txbStaffCMND.Text.ToString(), txbStaffName.Text.ToString(), dtpStaffBirth.Value, cbStaffSex.Text, int.Parse(nudStaffExp.Value.ToString()), txbStaffLocate.Text.ToString(), txbStaffCountry.Text.ToString(), txbStaffNum.Text.ToString(), idChucVu, "", 0);
+            }
+
+            entities1.EditLuongNhanVien(txbStaffCMND.Text.ToString(), decimal.Parse(txbStaffSalary.Text), double.Parse(txbStaffRate.Text), decimal.Parse(txbStaffSupportMoney.Text));
+            try
+            {
+                MessageBox.Show("Đã cập nhật thông tin nhân viên thành công.", "Thông báo", MessageBoxButtons.OK);
+
+            }
+            catch
+            {
+                MessageBox.Show("Lỗi không thể cập nhật nhân viên.", "Thông báo", MessageBoxButtons.OK);
+            }
+            ShowStaffTable(dgvStaffList);
+        }
+
+        private void barButtonItem5_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            txbStaffCMND.Enabled = false;
+            btnStaffEdit.Enabled = true;
+            btnStaffDelete.Enabled = true;
+            btnSave.Visible = false;
+            btnAddStaff.Visible = true;
+            btnStaffCancel.Enabled = false;
+        }
     }
 }

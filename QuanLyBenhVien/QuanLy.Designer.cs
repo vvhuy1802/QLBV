@@ -189,7 +189,7 @@ namespace QuanLyBenhVien
             // 
             // lbltieude2
             // 
-            this.lbltieude2.Caption = "Demo Quản lý";
+            this.lbltieude2.Caption = "Quản lý";
             this.lbltieude2.Id = 0;
             this.lbltieude2.ItemAppearance.Normal.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbltieude2.ItemAppearance.Normal.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
