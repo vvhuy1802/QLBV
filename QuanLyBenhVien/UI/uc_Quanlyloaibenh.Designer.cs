@@ -46,16 +46,19 @@ namespace QuanLyBenhVien.UI
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dtgvbenh = new System.Windows.Forms.DataGridView();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.loaiBenhBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvbenh)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(26, 26);
+            this.label4.Location = new System.Drawing.Point(35, 32);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(60, 15);
+            this.label4.Size = new System.Drawing.Size(66, 17);
             this.label4.TabIndex = 36;
             this.label4.Text = "Tìm Kiếm";
             // 
@@ -65,30 +68,34 @@ namespace QuanLyBenhVien.UI
             // 
             // txbgia
             // 
-            this.txbgia.Location = new System.Drawing.Point(580, 200);
+            this.txbgia.Location = new System.Drawing.Point(187, 192);
+            this.txbgia.Margin = new System.Windows.Forms.Padding(4);
             this.txbgia.Name = "txbgia";
-            this.txbgia.Size = new System.Drawing.Size(100, 20);
+            this.txbgia.Size = new System.Drawing.Size(178, 22);
             this.txbgia.TabIndex = 35;
             // 
             // txbten
             // 
-            this.txbten.Location = new System.Drawing.Point(580, 139);
+            this.txbten.Location = new System.Drawing.Point(187, 117);
+            this.txbten.Margin = new System.Windows.Forms.Padding(4);
             this.txbten.Name = "txbten";
-            this.txbten.Size = new System.Drawing.Size(100, 20);
+            this.txbten.Size = new System.Drawing.Size(178, 22);
             this.txbten.TabIndex = 34;
             // 
             // txbidbenh
             // 
-            this.txbidbenh.Location = new System.Drawing.Point(580, 77);
+            this.txbidbenh.Location = new System.Drawing.Point(187, 41);
+            this.txbidbenh.Margin = new System.Windows.Forms.Padding(4);
             this.txbidbenh.Name = "txbidbenh";
-            this.txbidbenh.Size = new System.Drawing.Size(100, 20);
+            this.txbidbenh.Size = new System.Drawing.Size(178, 22);
             this.txbidbenh.TabIndex = 33;
             // 
             // btnsua
             // 
-            this.btnsua.Location = new System.Drawing.Point(662, 265);
+            this.btnsua.Location = new System.Drawing.Point(778, 650);
+            this.btnsua.Margin = new System.Windows.Forms.Padding(4);
             this.btnsua.Name = "btnsua";
-            this.btnsua.Size = new System.Drawing.Size(75, 23);
+            this.btnsua.Size = new System.Drawing.Size(100, 28);
             this.btnsua.TabIndex = 32;
             this.btnsua.Text = "Sửa";
             this.btnsua.UseVisualStyleBackColor = true;
@@ -96,9 +103,10 @@ namespace QuanLyBenhVien.UI
             // 
             // btnxoa
             // 
-            this.btnxoa.Location = new System.Drawing.Point(564, 265);
+            this.btnxoa.Location = new System.Drawing.Point(636, 650);
+            this.btnxoa.Margin = new System.Windows.Forms.Padding(4);
             this.btnxoa.Name = "btnxoa";
-            this.btnxoa.Size = new System.Drawing.Size(75, 23);
+            this.btnxoa.Size = new System.Drawing.Size(100, 28);
             this.btnxoa.TabIndex = 31;
             this.btnxoa.Text = "Xóa";
             this.btnxoa.UseVisualStyleBackColor = true;
@@ -106,9 +114,10 @@ namespace QuanLyBenhVien.UI
             // 
             // btnthem
             // 
-            this.btnthem.Location = new System.Drawing.Point(451, 265);
+            this.btnthem.Location = new System.Drawing.Point(494, 650);
+            this.btnthem.Margin = new System.Windows.Forms.Padding(4);
             this.btnthem.Name = "btnthem";
-            this.btnthem.Size = new System.Drawing.Size(75, 23);
+            this.btnthem.Size = new System.Drawing.Size(100, 28);
             this.btnthem.TabIndex = 30;
             this.btnthem.Text = "Thêm";
             this.btnthem.UseVisualStyleBackColor = true;
@@ -117,35 +126,39 @@ namespace QuanLyBenhVien.UI
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(468, 200);
+            this.label3.Location = new System.Drawing.Point(20, 192);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(62, 15);
+            this.label3.Size = new System.Drawing.Size(70, 17);
             this.label3.TabIndex = 29;
             this.label3.Text = "Giá Khám";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(468, 142);
+            this.label2.Location = new System.Drawing.Point(20, 120);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(82, 15);
+            this.label2.Size = new System.Drawing.Size(95, 17);
             this.label2.TabIndex = 28;
             this.label2.Text = "Tên loại bệnh";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(468, 77);
+            this.label1.Location = new System.Drawing.Point(20, 44);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(77, 15);
+            this.label1.Size = new System.Drawing.Size(88, 17);
             this.label1.TabIndex = 27;
             this.label1.Text = "ID Loại bênh";
             // 
             // txbtimkiem
             // 
-            this.txbtimkiem.Location = new System.Drawing.Point(115, 21);
+            this.txbtimkiem.Location = new System.Drawing.Point(153, 26);
+            this.txbtimkiem.Margin = new System.Windows.Forms.Padding(4);
             this.txbtimkiem.Name = "txbtimkiem";
-            this.txbtimkiem.Size = new System.Drawing.Size(198, 20);
+            this.txbtimkiem.Size = new System.Drawing.Size(263, 22);
             this.txbtimkiem.TabIndex = 26;
             this.txbtimkiem.TextChanged += new System.EventHandler(this.txbtimkiem_TextChanged);
             // 
@@ -180,33 +193,48 @@ namespace QuanLyBenhVien.UI
             this.Column1,
             this.Column2,
             this.Column3});
-            this.dtgvbenh.Location = new System.Drawing.Point(7, 77);
+            this.dtgvbenh.Location = new System.Drawing.Point(9, 95);
+            this.dtgvbenh.Margin = new System.Windows.Forms.Padding(4);
             this.dtgvbenh.Name = "dtgvbenh";
             this.dtgvbenh.RowHeadersWidth = 45;
-            this.dtgvbenh.Size = new System.Drawing.Size(438, 376);
+            this.dtgvbenh.Size = new System.Drawing.Size(463, 629);
             this.dtgvbenh.TabIndex = 25;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.txbgia);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.txbten);
+            this.groupBox1.Controls.Add(this.txbidbenh);
+            this.groupBox1.Location = new System.Drawing.Point(479, 95);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(399, 265);
+            this.groupBox1.TabIndex = 37;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Thông tin";
             // 
             // uc_Quanlyloaibenh
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.txbgia);
-            this.Controls.Add(this.txbten);
-            this.Controls.Add(this.txbidbenh);
             this.Controls.Add(this.btnsua);
             this.Controls.Add(this.btnxoa);
             this.Controls.Add(this.btnthem);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.txbtimkiem);
             this.Controls.Add(this.dtgvbenh);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "uc_Quanlyloaibenh";
-            this.Size = new System.Drawing.Size(745, 475);
+            this.Size = new System.Drawing.Size(919, 760);
             this.Load += new System.EventHandler(this.uc_Quanlyloaibenh_Load);
             ((System.ComponentModel.ISupportInitialize)(this.loaiBenhBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvbenh)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -230,5 +258,6 @@ namespace QuanLyBenhVien.UI
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridView dtgvbenh;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }

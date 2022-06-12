@@ -132,6 +132,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="QLBV.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -276,14 +281,9 @@
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="QuanLy.resx">
       <DependentUpon>QuanLy.cs</DependentUpon>
     </EmbeddedResource>
@@ -374,6 +374,9 @@
       <DependentUpon>QLBV.edmx</DependentUpon>
       <LastGenOutput>QLBV.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\hopital11.png" />
+    <None Include="Resources\hopital1.png" />
+    <None Include="Resources\building_hospital_.png" />
     <None Include="Resources\211652_close_icon.png" />
     <None Include="Resources\7030152_ui basic_write_pen_pencil_edit_icon %282%29.png" />
     <None Include="Resources\4781812_bin_delete_file_garbage_recycle_icon %282%29.png" />

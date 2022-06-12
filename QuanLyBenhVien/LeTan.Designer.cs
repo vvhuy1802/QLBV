@@ -160,14 +160,9 @@ namespace QuanLyBenhVien
             this.Controls.Add(this.accordionControl1);
             this.Controls.Add(this.fluentDesignFormControl1);
             this.FluentDesignFormControl = this.fluentDesignFormControl1;
-<<<<<<< HEAD
-            this.IconOptions.Image = global::QuanLyBenhVien.Properties.Resources.camila_vignoni_fondo_hospital;
-            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-=======
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
->>>>>>> a839fa11dc6b18776d78f8f93cd73a2b2ad19c38
             this.Name = "LeTan";
             this.NavigationControl = this.accordionControl1;
             this.Text = "Lễ Tân";

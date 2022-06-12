@@ -63,16 +63,6 @@ namespace QuanLyBenhVien.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _352084_save_guardar_icon {
-            get {
-                object obj = ResourceManager.GetObject("352084_save_guardar_icon", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap _171273_backup_guardar_safe_save_store_icon {
             get {
                 object obj = ResourceManager.GetObject("171273_backup_guardar_safe_save_store_icon", resourceCulture);
@@ -123,6 +113,16 @@ namespace QuanLyBenhVien.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _352084_save_guardar_icon {
+            get {
+                object obj = ResourceManager.GetObject("352084_save_guardar_icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _4781812_bin_delete_file_garbage_recycle_icon {
             get {
                 object obj = ResourceManager.GetObject("4781812_bin_delete_file_garbage_recycle_icon", resourceCulture);
@@ -146,6 +146,16 @@ namespace QuanLyBenhVien.Properties {
         internal static System.Drawing.Bitmap _4781812_bin_delete_file_garbage_recycle_icon__2_ {
             get {
                 object obj = ResourceManager.GetObject("4781812_bin_delete_file_garbage_recycle_icon (2)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _5728195_building_healthcare_hospital_medical_nursing_icon {
+            get {
+                object obj = ResourceManager.GetObject("5728195_building_healthcare_hospital_medical_nursing_icon", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -183,9 +193,59 @@ namespace QuanLyBenhVien.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap building_hospital_ {
+            get {
+                object obj = ResourceManager.GetObject("building_hospital_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap camila_vignoni_fondo_hospital {
             get {
                 object obj = ResourceManager.GetObject("camila-vignoni-fondo-hospital", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap hopital {
+            get {
+                object obj = ResourceManager.GetObject("hopital", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap hopital1 {
+            get {
+                object obj = ResourceManager.GetObject("hopital1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap hopital11 {
+            get {
+                object obj = ResourceManager.GetObject("hopital11", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap p {
+            get {
+                object obj = ResourceManager.GetObject("p", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

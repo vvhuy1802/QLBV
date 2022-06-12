@@ -141,6 +141,16 @@ namespace QuanLyBenhVien
 
         private void btnSignUp_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSignUp_Click_1(object sender, EventArgs e)
+        {
             Form f = new TTDangKycs();
             f.Show();
             this.Hide();

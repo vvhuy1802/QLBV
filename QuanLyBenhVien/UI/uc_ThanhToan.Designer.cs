@@ -247,7 +247,7 @@ namespace QuanLyBenhVien.UI
             // 
             // btn_show
             // 
-            this.btn_show.Location = new System.Drawing.Point(491, 56);
+            this.btn_show.Location = new System.Drawing.Point(491, 61);
             this.btn_show.Margin = new System.Windows.Forms.Padding(4);
             this.btn_show.Name = "btn_show";
             this.btn_show.Size = new System.Drawing.Size(100, 28);
@@ -258,7 +258,7 @@ namespace QuanLyBenhVien.UI
             // 
             // btn_thanhtoan
             // 
-            this.btn_thanhtoan.Location = new System.Drawing.Point(915, 721);
+            this.btn_thanhtoan.Location = new System.Drawing.Point(915, 683);
             this.btn_thanhtoan.Margin = new System.Windows.Forms.Padding(4);
             this.btn_thanhtoan.Name = "btn_thanhtoan";
             this.btn_thanhtoan.Size = new System.Drawing.Size(143, 28);

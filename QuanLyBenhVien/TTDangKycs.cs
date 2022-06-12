@@ -96,6 +96,16 @@ namespace QuanLyBenhVien
 
         private void btnxacnhan_Click(object sender, EventArgs e)
         {
+            
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btndangnhap_Click(object sender, EventArgs e)
+        {
             if (txtcmnd.Text == "")
             {
                 MessageBox.Show("Bạn chưa CMND!");
@@ -162,11 +172,6 @@ namespace QuanLyBenhVien
                 txtTrocap.Focus();
             }
             else ThemTTNV();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

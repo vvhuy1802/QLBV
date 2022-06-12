@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,11 @@ namespace QuanLyBenhVien.UI
 {
     public partial class uc_Quanlybangluong : UserControl
     {
+        string str = @"data source=.\SQLEXPRESS;initial catalog=QuanLyBenhVien;integrated security=True";
+        SqlConnection conn = new SqlConnection();
+        SqlDataAdapter da = new SqlDataAdapter();
+        DataTable dt = new DataTable();
+        string sql;
         QuanLyBenhVienEntities entities = new QuanLyBenhVienEntities();
         DataGridViewRow row;
         public uc_Quanlybangluong()
@@ -87,13 +93,18 @@ namespace QuanLyBenhVien.UI
 
         private void uc_Quanlybangluong_Load(object sender, EventArgs e)
         {
-
+            conn.ConnectionString = str;
         }
 
         private void btnSearchStaff_Click(object sender, EventArgs e)
         {
             String keyword = txbtimkiem.Text.Trim();
             dgvSalary.DataSource = entities.NhanViens.Where(emp => emp.Ten.Contains(keyword)).ToList();
+        }
+
+        private void txbtimkiem_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

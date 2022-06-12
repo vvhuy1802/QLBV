@@ -31,30 +31,39 @@ namespace QuanLyBenhVien
         {
             DevExpress.Sparkline.LineSparklineView lineSparklineView1 = new DevExpress.Sparkline.LineSparklineView();
             DevExpress.Sparkline.LineSparklineView lineSparklineView2 = new DevExpress.Sparkline.LineSparklineView();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DangNhap));
             this.btndangnhap = new System.Windows.Forms.Button();
             this.sparklineEdit2 = new DevExpress.XtraEditors.SparklineEdit();
             this.sparklineEdit1 = new DevExpress.XtraEditors.SparklineEdit();
-            this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.password = new System.Windows.Forms.TextBox();
             this.username = new System.Windows.Forms.TextBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.btnSignUp = new System.Windows.Forms.Button();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.sparklineEdit2.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sparklineEdit1.Properties)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // btndangnhap
             // 
             this.btndangnhap.BackColor = System.Drawing.Color.Transparent;
-            this.btndangnhap.FlatAppearance.BorderSize = 0;
+            this.btndangnhap.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btndangnhap.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.btndangnhap.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btndangnhap.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lime;
             this.btndangnhap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btndangnhap.Font = new System.Drawing.Font("Arial", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btndangnhap.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btndangnhap.ForeColor = System.Drawing.Color.Black;
-            this.btndangnhap.Location = new System.Drawing.Point(230, 369);
+            this.btndangnhap.Location = new System.Drawing.Point(480, 297);
             this.btndangnhap.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btndangnhap.Name = "btndangnhap";
-            this.btndangnhap.Size = new System.Drawing.Size(324, 57);
+            this.btndangnhap.Size = new System.Drawing.Size(248, 50);
             this.btndangnhap.TabIndex = 11;
             this.btndangnhap.Text = "Đăng nhập";
             this.btndangnhap.UseVisualStyleBackColor = false;
@@ -62,40 +71,27 @@ namespace QuanLyBenhVien
             // 
             // sparklineEdit2
             // 
-            this.sparklineEdit2.Location = new System.Drawing.Point(216, 327);
+            this.sparklineEdit2.Location = new System.Drawing.Point(525, 225);
             this.sparklineEdit2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.sparklineEdit2.Name = "sparklineEdit2";
-            this.sparklineEdit2.Properties.Appearance.BackColor = System.Drawing.Color.DimGray;
+            this.sparklineEdit2.Properties.Appearance.BackColor = System.Drawing.Color.White;
             this.sparklineEdit2.Properties.Appearance.Options.UseBackColor = true;
             lineSparklineView1.ScaleFactor = 1.25F;
             this.sparklineEdit2.Properties.View = lineSparklineView1;
-            this.sparklineEdit2.Size = new System.Drawing.Size(324, 1);
+            this.sparklineEdit2.Size = new System.Drawing.Size(248, 1);
             this.sparklineEdit2.TabIndex = 16;
             // 
             // sparklineEdit1
             // 
-            this.sparklineEdit1.Location = new System.Drawing.Point(216, 266);
+            this.sparklineEdit1.Location = new System.Drawing.Point(525, 163);
             this.sparklineEdit1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.sparklineEdit1.Name = "sparklineEdit1";
             this.sparklineEdit1.Properties.Appearance.BackColor = System.Drawing.Color.DimGray;
             this.sparklineEdit1.Properties.Appearance.Options.UseBackColor = true;
             lineSparklineView2.ScaleFactor = 1.25F;
             this.sparklineEdit1.Properties.View = lineSparklineView2;
-            this.sparklineEdit1.Size = new System.Drawing.Size(324, 1);
+            this.sparklineEdit1.Size = new System.Drawing.Size(248, 1);
             this.sparklineEdit1.TabIndex = 12;
-            // 
-            // labelControl1
-            // 
-            this.labelControl1.Appearance.Font = new System.Drawing.Font("Arial", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelControl1.Appearance.ForeColor = System.Drawing.Color.Blue;
-            this.labelControl1.Appearance.Options.UseFont = true;
-            this.labelControl1.Appearance.Options.UseForeColor = true;
-            this.labelControl1.Location = new System.Drawing.Point(230, 145);
-            this.labelControl1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(334, 46);
-            this.labelControl1.TabIndex = 15;
-            this.labelControl1.Text = "Quản lý bệnh viện";
             // 
             // password
             // 
@@ -103,12 +99,12 @@ namespace QuanLyBenhVien
             this.password.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.password.Font = new System.Drawing.Font("Century", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.password.ForeColor = System.Drawing.Color.DimGray;
-            this.password.Location = new System.Drawing.Point(230, 300);
+            this.password.Location = new System.Drawing.Point(525, 203);
             this.password.Margin = new System.Windows.Forms.Padding(2);
             this.password.Name = "password";
-            this.password.Size = new System.Drawing.Size(324, 23);
+            this.password.PasswordChar = '*';
+            this.password.Size = new System.Drawing.Size(248, 23);
             this.password.TabIndex = 14;
-            this.password.Text = "PASSWORD";
             this.password.Enter += new System.EventHandler(this.password_Enter);
             this.password.Leave += new System.EventHandler(this.password_Leave);
             // 
@@ -118,56 +114,124 @@ namespace QuanLyBenhVien
             this.username.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.username.Font = new System.Drawing.Font("Century", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.username.ForeColor = System.Drawing.Color.DimGray;
-            this.username.Location = new System.Drawing.Point(230, 240);
+            this.username.Location = new System.Drawing.Point(525, 141);
             this.username.Margin = new System.Windows.Forms.Padding(2);
             this.username.Name = "username";
-            this.username.Size = new System.Drawing.Size(324, 23);
+            this.username.Size = new System.Drawing.Size(248, 23);
             this.username.TabIndex = 13;
-            this.username.Text = "USERNAME";
             this.username.Enter += new System.EventHandler(this.username_Enter);
             this.username.Leave += new System.EventHandler(this.username_Leave);
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(400, 460);
+            this.panel1.TabIndex = 18;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(54, 266);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(282, 90);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "CHÀO MỪNG ĐẾN VỚI\r\nHỆ THỐNG QUẢN LÝ\r\nBỆNH VIỆN\r\n";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(140, 78);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(128, 128);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(419, 147);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(96, 17);
+            this.label2.TabIndex = 19;
+            this.label2.Text = "Tên tài khoản:";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(419, 209);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(69, 17);
+            this.label3.TabIndex = 20;
+            this.label3.Text = "Mật khẩu:";
             // 
             // btnSignUp
             // 
             this.btnSignUp.BackColor = System.Drawing.Color.Transparent;
-            this.btnSignUp.FlatAppearance.BorderSize = 0;
+            this.btnSignUp.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.btnSignUp.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(28)))), ((int)(((byte)(28)))));
-            this.btnSignUp.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnSignUp.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Lime;
             this.btnSignUp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSignUp.Font = new System.Drawing.Font("Arial", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSignUp.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSignUp.ForeColor = System.Drawing.Color.Black;
-            this.btnSignUp.Location = new System.Drawing.Point(230, 434);
+            this.btnSignUp.Location = new System.Drawing.Point(480, 377);
             this.btnSignUp.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnSignUp.Name = "btnSignUp";
-            this.btnSignUp.Size = new System.Drawing.Size(334, 56);
-            this.btnSignUp.TabIndex = 17;
-            this.btnSignUp.Text = "Đăng ký tài khoản";
+            this.btnSignUp.Size = new System.Drawing.Size(248, 50);
+            this.btnSignUp.TabIndex = 21;
+            this.btnSignUp.Text = "Đăng ký";
             this.btnSignUp.UseVisualStyleBackColor = false;
-            this.btnSignUp.Click += new System.EventHandler(this.btnSignUp_Click);
+            this.btnSignUp.Click += new System.EventHandler(this.btnSignUp_Click_1);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(559, 26);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(90, 70);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 22;
+            this.pictureBox2.TabStop = false;
             // 
             // DangNhap
             // 
+            this.Appearance.BackColor = System.Drawing.Color.White;
+            this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImageLayoutStore = System.Windows.Forms.ImageLayout.Stretch;
-            this.BackgroundImageStore = global::QuanLyBenhVien.Properties.Resources.camila_vignoni_fondo_hospital;
-            this.ClientSize = new System.Drawing.Size(764, 555);
+            this.ClientSize = new System.Drawing.Size(798, 460);
+            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.btnSignUp);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.btndangnhap);
             this.Controls.Add(this.sparklineEdit2);
             this.Controls.Add(this.sparklineEdit1);
-            this.Controls.Add(this.labelControl1);
             this.Controls.Add(this.password);
             this.Controls.Add(this.username);
+            this.IconOptions.Image = ((System.Drawing.Image)(resources.GetObject("DangNhap.IconOptions.Image")));
             this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "DangNhap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Form1";
+            this.Text = "Hospital management";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.DangNhap_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Leave += new System.EventHandler(this.DangNhap_Leave);
             ((System.ComponentModel.ISupportInitialize)(this.sparklineEdit2.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sparklineEdit1.Properties)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -178,10 +242,15 @@ namespace QuanLyBenhVien
         private System.Windows.Forms.Button btndangnhap;
         private DevExpress.XtraEditors.SparklineEdit sparklineEdit2;
         private DevExpress.XtraEditors.SparklineEdit sparklineEdit1;
-        private DevExpress.XtraEditors.LabelControl labelControl1;
         private System.Windows.Forms.TextBox password;
         private System.Windows.Forms.TextBox username;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnSignUp;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
 

@@ -69,18 +69,18 @@ namespace QuanLyBenhVien.UI
             this.btnSave = new System.Windows.Forms.Button();
             this.btnStaffCancel = new System.Windows.Forms.Button();
             this.label15 = new System.Windows.Forms.Label();
-            this.txbStaffSupportMoney = new System.Windows.Forms.TextBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.txbStaffRate = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.txbStaffSalary = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.cbStaffRank = new System.Windows.Forms.ComboBox();
+            this.txbStaffSupportMoney = new System.Windows.Forms.TextBox();
             this.nupStaffLevel = new System.Windows.Forms.NumericUpDown();
             this.label3 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
             this.nudStaffExp = new System.Windows.Forms.NumericUpDown();
+            this.txbStaffSalary = new System.Windows.Forms.TextBox();
+            this.txbStaffRate = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
             this.btnStaffDelete = new System.Windows.Forms.Button();
             this.btnStaffEdit = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStaffList)).BeginInit();
@@ -108,7 +108,7 @@ namespace QuanLyBenhVien.UI
             this.colSalary,
             this.colRate,
             this.colSupMoney});
-            this.dgvStaffList.Location = new System.Drawing.Point(26, 86);
+            this.dgvStaffList.Location = new System.Drawing.Point(16, 86);
             this.dgvStaffList.Margin = new System.Windows.Forms.Padding(4);
             this.dgvStaffList.Name = "dgvStaffList";
             this.dgvStaffList.RowHeadersWidth = 51;
@@ -241,7 +241,7 @@ namespace QuanLyBenhVien.UI
             this.btnAddStaff.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddStaff.Image = global::QuanLyBenhVien.Properties.Resources._309049_add_user_human_person_plus_icon;
             this.btnAddStaff.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAddStaff.Location = new System.Drawing.Point(624, 205);
+            this.btnAddStaff.Location = new System.Drawing.Point(636, 205);
             this.btnAddStaff.Margin = new System.Windows.Forms.Padding(4);
             this.btnAddStaff.Name = "btnAddStaff";
             this.btnAddStaff.Size = new System.Drawing.Size(108, 61);
@@ -257,7 +257,7 @@ namespace QuanLyBenhVien.UI
             this.cbStaffSex.Items.AddRange(new object[] {
             "Nam",
             "Nữ"});
-            this.cbStaffSex.Location = new System.Drawing.Point(157, 176);
+            this.cbStaffSex.Location = new System.Drawing.Point(169, 176);
             this.cbStaffSex.Margin = new System.Windows.Forms.Padding(4);
             this.cbStaffSex.Name = "cbStaffSex";
             this.cbStaffSex.Size = new System.Drawing.Size(165, 24);
@@ -266,7 +266,7 @@ namespace QuanLyBenhVien.UI
             // dtpStaffBirth
             // 
             this.dtpStaffBirth.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpStaffBirth.Location = new System.Drawing.Point(157, 93);
+            this.dtpStaffBirth.Location = new System.Drawing.Point(169, 93);
             this.dtpStaffBirth.Margin = new System.Windows.Forms.Padding(4);
             this.dtpStaffBirth.Name = "dtpStaffBirth";
             this.dtpStaffBirth.Size = new System.Drawing.Size(272, 30);
@@ -275,7 +275,7 @@ namespace QuanLyBenhVien.UI
             // 
             // txbStaffCountry
             // 
-            this.txbStaffCountry.Location = new System.Drawing.Point(159, 219);
+            this.txbStaffCountry.Location = new System.Drawing.Point(171, 219);
             this.txbStaffCountry.Margin = new System.Windows.Forms.Padding(4);
             this.txbStaffCountry.Name = "txbStaffCountry";
             this.txbStaffCountry.Size = new System.Drawing.Size(163, 22);
@@ -283,7 +283,7 @@ namespace QuanLyBenhVien.UI
             // 
             // txbStaffNum
             // 
-            this.txbStaffNum.Location = new System.Drawing.Point(157, 136);
+            this.txbStaffNum.Location = new System.Drawing.Point(169, 136);
             this.txbStaffNum.Margin = new System.Windows.Forms.Padding(4);
             this.txbStaffNum.Name = "txbStaffNum";
             this.txbStaffNum.Size = new System.Drawing.Size(272, 22);
@@ -291,7 +291,7 @@ namespace QuanLyBenhVien.UI
             // 
             // txbStaffName
             // 
-            this.txbStaffName.Location = new System.Drawing.Point(157, 60);
+            this.txbStaffName.Location = new System.Drawing.Point(169, 60);
             this.txbStaffName.Margin = new System.Windows.Forms.Padding(4);
             this.txbStaffName.Name = "txbStaffName";
             this.txbStaffName.Size = new System.Drawing.Size(272, 22);
@@ -299,7 +299,7 @@ namespace QuanLyBenhVien.UI
             // 
             // txbStaffCMND
             // 
-            this.txbStaffCMND.Location = new System.Drawing.Point(157, 22);
+            this.txbStaffCMND.Location = new System.Drawing.Point(169, 22);
             this.txbStaffCMND.Margin = new System.Windows.Forms.Padding(4);
             this.txbStaffCMND.Name = "txbStaffCMND";
             this.txbStaffCMND.ReadOnly = true;
@@ -310,7 +310,7 @@ namespace QuanLyBenhVien.UI
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(15, 224);
+            this.label8.Location = new System.Drawing.Point(27, 224);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(99, 23);
@@ -321,7 +321,7 @@ namespace QuanLyBenhVien.UI
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(15, 133);
+            this.label6.Location = new System.Drawing.Point(27, 133);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(130, 23);
@@ -333,7 +333,7 @@ namespace QuanLyBenhVien.UI
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(15, 173);
+            this.label5.Location = new System.Drawing.Point(27, 173);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(91, 23);
@@ -345,7 +345,7 @@ namespace QuanLyBenhVien.UI
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(17, 96);
+            this.label4.Location = new System.Drawing.Point(29, 96);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(101, 23);
@@ -357,7 +357,7 @@ namespace QuanLyBenhVien.UI
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(19, 60);
+            this.label2.Location = new System.Drawing.Point(31, 60);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(99, 23);
@@ -369,7 +369,7 @@ namespace QuanLyBenhVien.UI
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(19, 19);
+            this.label1.Location = new System.Drawing.Point(31, 19);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(74, 23);
@@ -380,7 +380,7 @@ namespace QuanLyBenhVien.UI
             // btnSearchStaff
             // 
             this.btnSearchStaff.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearchStaff.Location = new System.Drawing.Point(24, 29);
+            this.btnSearchStaff.Location = new System.Drawing.Point(16, 29);
             this.btnSearchStaff.Margin = new System.Windows.Forms.Padding(4);
             this.btnSearchStaff.Name = "btnSearchStaff";
             this.btnSearchStaff.Size = new System.Drawing.Size(121, 36);
@@ -392,7 +392,7 @@ namespace QuanLyBenhVien.UI
             // txbtimkiem
             // 
             this.txbtimkiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbtimkiem.Location = new System.Drawing.Point(167, 29);
+            this.txbtimkiem.Location = new System.Drawing.Point(179, 29);
             this.txbtimkiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txbtimkiem.Multiline = true;
             this.txbtimkiem.Name = "txbtimkiem";
@@ -404,7 +404,7 @@ namespace QuanLyBenhVien.UI
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(343, 176);
+            this.label10.Location = new System.Drawing.Point(355, 176);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(164, 23);
@@ -414,7 +414,7 @@ namespace QuanLyBenhVien.UI
             // 
             // txbStaffLocate
             // 
-            this.txbStaffLocate.Location = new System.Drawing.Point(157, 260);
+            this.txbStaffLocate.Location = new System.Drawing.Point(169, 260);
             this.txbStaffLocate.Margin = new System.Windows.Forms.Padding(4);
             this.txbStaffLocate.Multiline = true;
             this.txbStaffLocate.Name = "txbStaffLocate";
@@ -425,7 +425,7 @@ namespace QuanLyBenhVien.UI
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(17, 274);
+            this.label11.Location = new System.Drawing.Point(29, 274);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(75, 23);
@@ -439,7 +439,7 @@ namespace QuanLyBenhVien.UI
             "Lễ tân",
             "Bác sĩ",
             "Quản lý"});
-            this.cbStaffPosition.Location = new System.Drawing.Point(669, 107);
+            this.cbStaffPosition.Location = new System.Drawing.Point(681, 107);
             this.cbStaffPosition.Margin = new System.Windows.Forms.Padding(4);
             this.cbStaffPosition.Name = "cbStaffPosition";
             this.cbStaffPosition.Size = new System.Drawing.Size(150, 24);
@@ -450,7 +450,7 @@ namespace QuanLyBenhVien.UI
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(520, 108);
+            this.label7.Location = new System.Drawing.Point(532, 108);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(88, 23);
@@ -494,7 +494,7 @@ namespace QuanLyBenhVien.UI
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.cbStaffSex);
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Location = new System.Drawing.Point(26, 385);
+            this.panel1.Location = new System.Drawing.Point(16, 385);
             this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1107, 324);
@@ -505,7 +505,7 @@ namespace QuanLyBenhVien.UI
             this.btnSave.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSave.Image = global::QuanLyBenhVien.Properties.Resources._171273_backup_guardar_safe_save_store_icon;
             this.btnSave.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSave.Location = new System.Drawing.Point(635, 205);
+            this.btnSave.Location = new System.Drawing.Point(647, 205);
             this.btnSave.Margin = new System.Windows.Forms.Padding(4);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(84, 61);
@@ -520,7 +520,7 @@ namespace QuanLyBenhVien.UI
             this.btnStaffCancel.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStaffCancel.Image = global::QuanLyBenhVien.Properties.Resources._211652_close_icon;
             this.btnStaffCancel.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnStaffCancel.Location = new System.Drawing.Point(971, 207);
+            this.btnStaffCancel.Location = new System.Drawing.Point(983, 207);
             this.btnStaffCancel.Margin = new System.Windows.Forms.Padding(4);
             this.btnStaffCancel.Name = "btnStaffCancel";
             this.btnStaffCancel.Size = new System.Drawing.Size(91, 59);
@@ -534,88 +534,18 @@ namespace QuanLyBenhVien.UI
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(828, 66);
+            this.label15.Location = new System.Drawing.Point(840, 66);
             this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(50, 23);
             this.label15.TabIndex = 135;
             this.label15.Text = "VNĐ";
             // 
-            // txbStaffSupportMoney
-            // 
-            this.txbStaffSupportMoney.Location = new System.Drawing.Point(669, 66);
-            this.txbStaffSupportMoney.Margin = new System.Windows.Forms.Padding(4);
-            this.txbStaffSupportMoney.Name = "txbStaffSupportMoney";
-            this.txbStaffSupportMoney.Size = new System.Drawing.Size(150, 22);
-            this.txbStaffSupportMoney.TabIndex = 134;
-            this.txbStaffSupportMoney.TextChanged += new System.EventHandler(this.txbStaffSupportMoney_TextChanged);
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(520, 66);
-            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(85, 23);
-            this.label16.TabIndex = 133;
-            this.label16.Text = "Trợ cấp:";
-            // 
-            // txbStaffRate
-            // 
-            this.txbStaffRate.Location = new System.Drawing.Point(984, 22);
-            this.txbStaffRate.Margin = new System.Windows.Forms.Padding(4);
-            this.txbStaffRate.Name = "txbStaffRate";
-            this.txbStaffRate.Size = new System.Drawing.Size(83, 22);
-            this.txbStaffRate.TabIndex = 132;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(909, 22);
-            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(67, 23);
-            this.label14.TabIndex = 131;
-            this.label14.Text = "Hệ số:";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(828, 22);
-            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(50, 23);
-            this.label13.TabIndex = 130;
-            this.label13.Text = "VNĐ";
-            // 
-            // txbStaffSalary
-            // 
-            this.txbStaffSalary.Location = new System.Drawing.Point(669, 22);
-            this.txbStaffSalary.Margin = new System.Windows.Forms.Padding(4);
-            this.txbStaffSalary.Name = "txbStaffSalary";
-            this.txbStaffSalary.Size = new System.Drawing.Size(150, 22);
-            this.txbStaffSalary.TabIndex = 129;
-            this.txbStaffSalary.TextChanged += new System.EventHandler(this.txbStaffSalary_TextChanged);
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(520, 22);
-            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(141, 23);
-            this.label12.TabIndex = 128;
-            this.label12.Text = "Lương cơ bản:";
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(828, 107);
+            this.label9.Location = new System.Drawing.Point(840, 107);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(61, 23);
@@ -629,16 +559,25 @@ namespace QuanLyBenhVien.UI
             "I",
             "II",
             "III"});
-            this.cbStaffRank.Location = new System.Drawing.Point(897, 105);
+            this.cbStaffRank.Location = new System.Drawing.Point(909, 105);
             this.cbStaffRank.Margin = new System.Windows.Forms.Padding(4);
             this.cbStaffRank.Name = "cbStaffRank";
             this.cbStaffRank.Size = new System.Drawing.Size(50, 24);
             this.cbStaffRank.TabIndex = 126;
             // 
+            // txbStaffSupportMoney
+            // 
+            this.txbStaffSupportMoney.Location = new System.Drawing.Point(681, 66);
+            this.txbStaffSupportMoney.Margin = new System.Windows.Forms.Padding(4);
+            this.txbStaffSupportMoney.Name = "txbStaffSupportMoney";
+            this.txbStaffSupportMoney.Size = new System.Drawing.Size(150, 22);
+            this.txbStaffSupportMoney.TabIndex = 134;
+            this.txbStaffSupportMoney.TextChanged += new System.EventHandler(this.txbStaffSupportMoney_TextChanged);
+            // 
             // nupStaffLevel
             // 
             this.nupStaffLevel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nupStaffLevel.Location = new System.Drawing.Point(1024, 100);
+            this.nupStaffLevel.Location = new System.Drawing.Point(1036, 100);
             this.nupStaffLevel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.nupStaffLevel.Name = "nupStaffLevel";
             this.nupStaffLevel.Size = new System.Drawing.Size(43, 30);
@@ -648,28 +587,89 @@ namespace QuanLyBenhVien.UI
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(967, 103);
+            this.label3.Location = new System.Drawing.Point(979, 103);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(50, 23);
             this.label3.TabIndex = 124;
             this.label3.Text = "Bậc:";
             // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(532, 66);
+            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(85, 23);
+            this.label16.TabIndex = 133;
+            this.label16.Text = "Trợ cấp:";
+            // 
             // nudStaffExp
             // 
             this.nudStaffExp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nudStaffExp.Location = new System.Drawing.Point(514, 176);
+            this.nudStaffExp.Location = new System.Drawing.Point(526, 176);
             this.nudStaffExp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.nudStaffExp.Name = "nudStaffExp";
             this.nudStaffExp.Size = new System.Drawing.Size(53, 30);
             this.nudStaffExp.TabIndex = 123;
+            // 
+            // txbStaffSalary
+            // 
+            this.txbStaffSalary.Location = new System.Drawing.Point(681, 22);
+            this.txbStaffSalary.Margin = new System.Windows.Forms.Padding(4);
+            this.txbStaffSalary.Name = "txbStaffSalary";
+            this.txbStaffSalary.Size = new System.Drawing.Size(150, 22);
+            this.txbStaffSalary.TabIndex = 129;
+            this.txbStaffSalary.TextChanged += new System.EventHandler(this.txbStaffSalary_TextChanged);
+            // 
+            // txbStaffRate
+            // 
+            this.txbStaffRate.Location = new System.Drawing.Point(996, 22);
+            this.txbStaffRate.Margin = new System.Windows.Forms.Padding(4);
+            this.txbStaffRate.Name = "txbStaffRate";
+            this.txbStaffRate.Size = new System.Drawing.Size(83, 22);
+            this.txbStaffRate.TabIndex = 132;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(532, 22);
+            this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(141, 23);
+            this.label12.TabIndex = 128;
+            this.label12.Text = "Lương cơ bản:";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(921, 22);
+            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(67, 23);
+            this.label14.TabIndex = 131;
+            this.label14.Text = "Hệ số:";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(840, 22);
+            this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(50, 23);
+            this.label13.TabIndex = 130;
+            this.label13.Text = "VNĐ";
             // 
             // btnStaffDelete
             // 
             this.btnStaffDelete.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStaffDelete.Image = global::QuanLyBenhVien.Properties.Resources._4781812_bin_delete_file_garbage_recycle_icon__2_;
             this.btnStaffDelete.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnStaffDelete.Location = new System.Drawing.Point(740, 205);
+            this.btnStaffDelete.Location = new System.Drawing.Point(752, 205);
             this.btnStaffDelete.Margin = new System.Windows.Forms.Padding(4);
             this.btnStaffDelete.Name = "btnStaffDelete";
             this.btnStaffDelete.Size = new System.Drawing.Size(92, 61);
@@ -685,7 +685,7 @@ namespace QuanLyBenhVien.UI
             this.btnStaffEdit.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStaffEdit.Image = global::QuanLyBenhVien.Properties.Resources._7030152_ui_basic_write_pen_pencil_edit_icon__2_;
             this.btnStaffEdit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnStaffEdit.Location = new System.Drawing.Point(847, 205);
+            this.btnStaffEdit.Location = new System.Drawing.Point(859, 205);
             this.btnStaffEdit.Margin = new System.Windows.Forms.Padding(4);
             this.btnStaffEdit.Name = "btnStaffEdit";
             this.btnStaffEdit.Size = new System.Drawing.Size(100, 61);

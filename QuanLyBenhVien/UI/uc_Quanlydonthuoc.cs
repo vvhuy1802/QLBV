@@ -133,17 +133,15 @@ namespace QuanLyBenhVien.UI
             LoadBenh(dtgvbenhnhan);
         }
 
-        private void btn_test_Click(object sender, EventArgs e)
+        private void txbtimkiem_TextChanged(object sender, EventArgs e)
         {
-            var connectionString = @"data source=HUY\SQLEXPRESS;initial catalog=QuanLyBenhVien;integrated security=True";
-            using (var connection = new SqlConnection(connectionString))
-            {
-                var commandText = "select Sum(LoaiThuoc.Gia*DonThuoc.SoLuong) from LoaiThuoc,DonThuoc where LoaiThuoc.id=DonThuoc.idthuoc and DonThuoc.idbenhnhan='" + txbcmnd.Text + "'";
-                var command = new SqlCommand(commandText, connection);
-                connection.Open();
-                var count = command.ExecuteScalar();
-                txb_test.Text = count.ToString();
-            }
+            sql = "SELECT CMND as CMND,Ten as Ten,Benh as Benh,Thuoc as Thuoc FROM dbo.BenhNhan WHERE CMND LIKE N'%" + txbtimkiem.Text + "%'";
+            da = new SqlDataAdapter(sql, conn);
+            dt.Clear();
+            da.Fill(dt);
+            dtgvbenhnhan.DataSource = dt;
+            dtgvbenhnhan.Refresh();
+            BindingBenh(dtgvbenhnhan);
         }
     }
 }

@@ -30,12 +30,18 @@ namespace QuanLyBenhVien.UI
         private void InitializeComponent()
         {
             this.button1 = new System.Windows.Forms.Button();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtpassnew2 = new System.Windows.Forms.TextBox();
             this.txtpassnew1 = new System.Windows.Forms.TextBox();
             this.txtpassold = new System.Windows.Forms.TextBox();
             this.labelControl1 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl3 = new DevExpress.XtraEditors.LabelControl();
             this.labelControl2 = new DevExpress.XtraEditors.LabelControl();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.groupBox4.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
@@ -43,7 +49,7 @@ namespace QuanLyBenhVien.UI
             this.button1.Font = new System.Drawing.Font("Arial", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Image = global::QuanLyBenhVien.Properties.Resources._352084_save_guardar_icon;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(717, 484);
+            this.button1.Location = new System.Drawing.Point(763, 46);
             this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(132, 53);
@@ -53,32 +59,53 @@ namespace QuanLyBenhVien.UI
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.groupBox1);
+            this.groupBox4.Location = new System.Drawing.Point(48, 41);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(1088, 445);
+            this.groupBox4.TabIndex = 54;
+            this.groupBox4.TabStop = false;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.txtpassnew2);
+            this.groupBox1.Controls.Add(this.txtpassnew1);
+            this.groupBox1.Controls.Add(this.txtpassold);
+            this.groupBox1.Controls.Add(this.labelControl1);
+            this.groupBox1.Controls.Add(this.labelControl3);
+            this.groupBox1.Controls.Add(this.labelControl2);
+            this.groupBox1.Location = new System.Drawing.Point(241, 174);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(650, 265);
+            this.groupBox1.TabIndex = 40;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Thông tin";
+            // 
             // txtpassnew2
             // 
-            this.txtpassnew2.Location = new System.Drawing.Point(582, 404);
+            this.txtpassnew2.Location = new System.Drawing.Point(362, 196);
             this.txtpassnew2.Margin = new System.Windows.Forms.Padding(4);
             this.txtpassnew2.Name = "txtpassnew2";
             this.txtpassnew2.Size = new System.Drawing.Size(267, 22);
-            this.txtpassnew2.TabIndex = 52;
-            this.txtpassnew2.TextChanged += new System.EventHandler(this.txtpassnew2_TextChanged);
+            this.txtpassnew2.TabIndex = 58;
             // 
             // txtpassnew1
             // 
-            this.txtpassnew1.Location = new System.Drawing.Point(582, 333);
+            this.txtpassnew1.Location = new System.Drawing.Point(362, 125);
             this.txtpassnew1.Margin = new System.Windows.Forms.Padding(4);
             this.txtpassnew1.Name = "txtpassnew1";
             this.txtpassnew1.Size = new System.Drawing.Size(267, 22);
-            this.txtpassnew1.TabIndex = 51;
-            this.txtpassnew1.TextChanged += new System.EventHandler(this.txtpassnew1_TextChanged);
+            this.txtpassnew1.TabIndex = 57;
             // 
             // txtpassold
             // 
-            this.txtpassold.Location = new System.Drawing.Point(582, 253);
+            this.txtpassold.Location = new System.Drawing.Point(362, 45);
             this.txtpassold.Margin = new System.Windows.Forms.Padding(4);
             this.txtpassold.Name = "txtpassold";
             this.txtpassold.Size = new System.Drawing.Size(267, 22);
-            this.txtpassold.TabIndex = 50;
-            this.txtpassold.TextChanged += new System.EventHandler(this.txtpassold_TextChanged);
+            this.txtpassold.TabIndex = 56;
             // 
             // labelControl1
             // 
@@ -86,13 +113,12 @@ namespace QuanLyBenhVien.UI
             this.labelControl1.Appearance.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.labelControl1.Appearance.Options.UseFont = true;
             this.labelControl1.Appearance.Options.UseForeColor = true;
-            this.labelControl1.Location = new System.Drawing.Point(303, 253);
+            this.labelControl1.Location = new System.Drawing.Point(30, 45);
             this.labelControl1.Margin = new System.Windows.Forms.Padding(4);
             this.labelControl1.Name = "labelControl1";
             this.labelControl1.Size = new System.Drawing.Size(204, 29);
-            this.labelControl1.TabIndex = 47;
+            this.labelControl1.TabIndex = 53;
             this.labelControl1.Text = "Mật khẩu hiện tại:";
-            this.labelControl1.Click += new System.EventHandler(this.labelControl1_Click);
             // 
             // labelControl3
             // 
@@ -100,13 +126,12 @@ namespace QuanLyBenhVien.UI
             this.labelControl3.Appearance.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.labelControl3.Appearance.Options.UseFont = true;
             this.labelControl3.Appearance.Options.UseForeColor = true;
-            this.labelControl3.Location = new System.Drawing.Point(242, 399);
+            this.labelControl3.Location = new System.Drawing.Point(30, 190);
             this.labelControl3.Margin = new System.Windows.Forms.Padding(4);
             this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(265, 29);
-            this.labelControl3.TabIndex = 49;
-            this.labelControl3.Text = "Nhập lại mật khẩu mới:";
-            this.labelControl3.Click += new System.EventHandler(this.labelControl3_Click);
+            this.labelControl3.Size = new System.Drawing.Size(213, 29);
+            this.labelControl3.TabIndex = 55;
+            this.labelControl3.Text = "Nhập lại mật khẩu:";
             // 
             // labelControl2
             // 
@@ -114,41 +139,50 @@ namespace QuanLyBenhVien.UI
             this.labelControl2.Appearance.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.labelControl2.Appearance.Options.UseFont = true;
             this.labelControl2.Appearance.Options.UseForeColor = true;
-            this.labelControl2.Location = new System.Drawing.Point(343, 327);
+            this.labelControl2.Location = new System.Drawing.Point(30, 118);
             this.labelControl2.Margin = new System.Windows.Forms.Padding(4);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(164, 29);
-            this.labelControl2.TabIndex = 48;
+            this.labelControl2.TabIndex = 54;
             this.labelControl2.Text = "Mật khẩu mới:";
-            this.labelControl2.Click += new System.EventHandler(this.labelControl2_Click);
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.button1);
+            this.groupBox3.Location = new System.Drawing.Point(48, 492);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(1088, 276);
+            this.groupBox3.TabIndex = 55;
+            this.groupBox3.TabStop = false;
             // 
             // uc_Doimatkhau2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.txtpassnew2);
-            this.Controls.Add(this.txtpassnew1);
-            this.Controls.Add(this.txtpassold);
-            this.Controls.Add(this.labelControl1);
-            this.Controls.Add(this.labelControl3);
-            this.Controls.Add(this.labelControl2);
+            this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.Controls.Add(this.groupBox3);
+            this.Controls.Add(this.groupBox4);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "uc_Doimatkhau2";
             this.Size = new System.Drawing.Size(1180, 800);
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox txtpassnew2;
         private System.Windows.Forms.TextBox txtpassnew1;
         private System.Windows.Forms.TextBox txtpassold;
         private DevExpress.XtraEditors.LabelControl labelControl1;
         private DevExpress.XtraEditors.LabelControl labelControl3;
         private DevExpress.XtraEditors.LabelControl labelControl2;
+        private System.Windows.Forms.GroupBox groupBox3;
     }
 }
